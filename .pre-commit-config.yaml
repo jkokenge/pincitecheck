@@ -1,0 +1,29 @@
+# Runs on every `git commit`. Install once per clone: `uv run pre-commit install`
+# Run on everything manually: `uv run pre-commit run --all-files`
+repos:
+  # Basic file hygiene
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-toml
+      - id: check-merge-conflict
+      - id: check-added-large-files # keeps benchmark data and PDFs out of git
+        args: ["--maxkb=500"]
+      - id: detect-private-key
+
+  # Lint (with safe autofixes) and format — same ruff config as CI, from pyproject.toml
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.16.9
+    hooks:
+      - id: ruff-check
+        args: ["--fix"]
+      - id: ruff-format
+
+  # Secret scanning — blocks commits containing API tokens (e.g., the CourtListener token)
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.0
+    hooks:
+      - id: gitleaks
