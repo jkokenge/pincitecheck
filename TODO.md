@@ -16,8 +16,8 @@ Repo, tooling, CI, and CourtListener access — everything that must exist befor
 **Deliverable:** Public GitHub repo with a green CI badge, a README stating purpose,
 disclaimer, and attributions, and a working CourtListener token with known quota.
 
-- [ ] Create GitHub repo; `git init`; add `.gitignore` + `.editorconfig`  ← CURRENT
-- [ ] `uv init` — `pyproject.toml` (Python 3.12), src layout with `pincitecheck` package
+- [x] Create GitHub repo; `git init`; add `.gitignore` + `.editorconfig`
+- [ ] `uv init` — `pyproject.toml` (Python 3.12), src layout with `pincitecheck` package  ← CURRENT
 - [ ] Configure ruff + pytest in `pyproject.toml`; add one smoke test
 - [ ] pre-commit hooks: ruff, ruff-format, basic file checks, secret scanning
 - [ ] GitHub Actions CI: ruff + pytest on push and PR

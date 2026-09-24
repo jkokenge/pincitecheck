@@ -1,0 +1,43 @@
+# Secrets — CourtListener token and any other credentials live here, never in git
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual environment (uv)
+.venv/
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Local API cache and run artifacts (regenerable; may contain retrieved opinion text)
+*.sqlite
+*.sqlite3
+*.db
+.cache/
+runs/
+
+# Downloaded benchmark data (fetched by script, not committed)
+data/raw/
+
+# Terraform (Phase 8)
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
