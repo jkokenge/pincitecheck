@@ -17,8 +17,8 @@ Repo, tooling, CI, and CourtListener access — everything that must exist befor
 disclaimer, and attributions, and a working CourtListener token with known quota.
 
 - [x] Create GitHub repo; `git init`; add `.gitignore` + `.editorconfig`
-- [ ] `uv init` — `pyproject.toml` (Python 3.12), src layout with `pincitecheck` package  ← CURRENT
-- [ ] Configure ruff + pytest in `pyproject.toml`; add one smoke test
+- [x] `uv init` — `pyproject.toml` (Python 3.12), src layout with `pincitecheck` package
+- [ ] Configure ruff + pytest in `pyproject.toml`; add one smoke test  ← CURRENT
 - [ ] pre-commit hooks: ruff, ruff-format, basic file checks, secret scanning
 - [ ] GitHub Actions CI: ruff + pytest on push and PR
 - [ ] Choose licenses (code, and later the CiteBench dataset)

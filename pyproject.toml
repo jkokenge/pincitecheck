@@ -1,0 +1,17 @@
+[project]
+name = "pincitecheck"
+version = "0.1.0"
+description = "Verify citations in AI-generated legal briefs: case existence, quote/pincite accuracy, and proposition support."
+readme = "README.md"
+authors = [
+    { name = "Joe Kokenge", email = "jkokenge@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+pincitecheck = "pincitecheck:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
