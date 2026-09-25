@@ -20,10 +20,10 @@ disclaimer, and attributions, and a working CourtListener token with known quota
 - [x] `uv init` — `pyproject.toml` (Python 3.12), src layout with `pincitecheck` package
 - [x] Configure ruff + pytest in `pyproject.toml`; add one smoke test
 - [x] pre-commit hooks: ruff, ruff-format, basic file checks, secret scanning
-- [ ] GitHub Actions CI: ruff + pytest on push and PR  ← CURRENT
-- [ ] Choose licenses (code, and later the CiteBench dataset)
-- [ ] CourtListener account + API token; `.env.example`; token loaded from env, never committed
-- [ ] Script to call the usage endpoint; record actual quota in `docs/notes/courtlistener.md`
+- [x] GitHub Actions CI: ruff + pytest on push and PR
+- [x] Choose code license: Apache-2.0 (`LICENSE` + `pyproject.toml`); dataset license deferred to Phase 7
+- [x] CourtListener account + API token; `.env.example`; token loaded from env, never committed
+- [ ] Script to call the usage endpoint; record actual quota in `docs/notes/courtlistener.md`  ← CURRENT
 - [ ] One manual citation-lookup call; record response shape and any per-endpoint limits
 - [ ] Estimate benchmark-scale call volume (LePhantomCite: ~4,500 citations + tier 2 opinion fetches); decide whether FLP membership is needed (a $10/mo tier exists — confirm it actually raises API limits before paying)
 - [ ] README stub: purpose, not-legal-advice disclaimer, attributions (FLP/CourtListener, Charlotin CC BY), CI badge
@@ -162,6 +162,7 @@ LePhantomCite and the real-world set (GitHub, optionally Hugging Face).
 - [ ] Collect legal AI tool outputs (manual exports only)
 - [ ] Agent benchmark: agent with vs. without PinciteCheck + CourtListener MCP
 - [ ] Share vendor results privately with vendors
+- [ ] Choose CiteBench dataset license (likely CC BY 4.0 — must be compatible with Charlotin CC BY and LePhantomCite terms)
 - [ ] Methodology doc
 - [ ] Publish dataset + results (anonymized vendors by default)
 

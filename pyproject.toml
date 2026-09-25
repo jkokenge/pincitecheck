@@ -3,11 +3,15 @@ name = "pincitecheck"
 version = "0.1.0"
 description = "Verify citations in AI-generated legal briefs: case existence, quote/pincite accuracy, and proposition support."
 readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
 authors = [
     { name = "Joe Kokenge", email = "jkokenge@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pydantic-settings>=2.15.0",
+]
 
 [project.scripts]
 pincitecheck = "pincitecheck:main"
