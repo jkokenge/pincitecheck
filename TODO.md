@@ -26,7 +26,7 @@ disclaimer, and attributions, and a working CourtListener token with known quota
 - [x] Script to call the usage endpoint; record actual quota in `docs/notes/courtlistener.md`
 - [x] One manual citation-lookup call; record response shape and any per-endpoint limits
 - [x] Estimate benchmark-scale call volume (see `docs/notes/courtlistener.md`); FLP membership not needed for limits
-- [ ] README stub: purpose, not-legal-advice disclaimer, attributions (FLP/CourtListener, Charlotin CC BY), CI badge  ← CURRENT
+- [ ] README stub: purpose, not-legal-advice disclaimer, attributions (FLP/CourtListener, Charlotin CC BY), CI badge
 
 ---
 
@@ -37,7 +37,7 @@ Turn a brief into structured citations, each paired with the proposition it supp
 **Deliverable:** Write-up (ADR 0001) comparing regex vs. eyecite extraction on 10 public
 RECAP briefs, with precision/recall numbers.
 
-- [ ] Select 10 public RECAP briefs; record source URLs in a manifest file
+- [ ] Select 10 public RECAP briefs; record source URLs in a manifest file  ← CURRENT
 - [ ] pydantic models: `Citation` (raw text, volume, reporter, page, pincite, span, proposition)
 - [ ] PDF text extraction (pdfplumber) + tests
 - [ ] DOCX text extraction (python-docx) + tests
@@ -155,7 +155,7 @@ Full benchmark across tiers and systems, published.
 LePhantomCite and the real-world set (GitHub, optionally Hugging Face).
 
 - [ ] Tier 3 run on LePhantomCite content-misrepresentation items; compare with paper baselines
-- [ ] Check Charlotin database for bulk export; confirm attribution requirements
+- [ ] Check Charlotin database for bulk export; confirm attribution requirements (CSV export exists; cite wording is in README — confirm both still hold)
 - [ ] Set C: patterns modeled on Charlotin categories (real-world distribution — LePhantomCite's stated gap)
 - [ ] Check each vendor's terms on publishing benchmarks; check StrongSuit API access
 - [ ] Run raw general-purpose LLMs
