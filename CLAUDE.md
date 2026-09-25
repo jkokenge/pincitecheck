@@ -108,7 +108,7 @@ Deliberately unresolved. Decide when the listed phase forces it, then move the d
 - **Phase 7** — Benchmark v1: tier 3 on LePhantomCite, CiteBench real-world set, system comparison, publication (Milestone 3)
 - **Phase 8** — AWS reference architecture (Terraform)
 - **Phase 9** — Attorney-facing report UX
-- **Phase 10** — Outreach: pitches, demo video, blog post (eyecite PR opportunistically, any phase)
+- **Phase 10** — Outreach & role packaging: per-role materials (AI/ML, backend/platform, cloud/security, solutions/FDE), company pitches, demo video, blog post (eyecite PR opportunistically, any phase)
 - **Phase 11** — Stretch: webhook re-verification, negative-treatment detection
 
 ## Working Preferences

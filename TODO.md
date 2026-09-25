@@ -198,19 +198,62 @@ Deploy the pipeline with regulated-industry engineering: IaC, encryption, least 
 
 ---
 
-## Phase 10 — Outreach
+## Phase 10 — Outreach & Role Packaging
 
-**Deliverable:** Pitches, demo video, and blog post ready to send.
+Package the same project for different roles. Each role emphasizes a different facet:
+AI/ML → evals; backend/platform → API and rate-limit design; cloud/security → the AWS
+stack (the "cloud engineer who now builds AI systems" upgrade story); solutions/FDE →
+demo and integration. A role's tasks can be done as soon as its source milestone lands —
+no need to wait for Phase 10 to start applying.
+
+**Deliverable:** For each role type: resume bullets, a tailored write-up or artifact, and a
+talk track — plus company pitches, demo video, and blog post ready to send.
+
+### Shared
 
 - [ ] Upstream contribution to eyecite or a related FLP repo (do earlier if an opportunity arises)
-- [ ] README final pass: problem, architecture diagram, CiteBench results, limitations
+- [ ] Core story: one paragraph (problem → approach → result) every pitch builds from
+- [ ] README final pass: problem, architecture diagram, benchmark results, limitations
 - [ ] Narrative link to the IaC Security Agent project
+- [ ] Pin the repo on GitHub; add the project to LinkedIn
+- [ ] 3–5 minute demo video + 60-second cut
+- [ ] Blog post on methodology
+
+### AI / ML engineer (source: Phases 4, 6, 7)
+
+- [ ] Resume bullets: eval design, benchmark results, judge calibration
+- [ ] Error analysis write-up: 10 failure cases, root cause for each
+- [ ] Judge calibration write-up: judge-vs-human agreement (Cohen's kappa), cost/latency tradeoffs
+- [ ] Talk track: "how I'd evaluate a legal AI product's citation accuracy"
+
+### Backend / platform engineer (source: Phases 2, 5)
+
+- [ ] Resume bullets: API design, caching, rate-limit-aware client
+- [ ] API polish: OpenAPI docs, request/response examples, versioned endpoint
+- [ ] Write-up: designing around a 125-requests/day upstream quota (caching, batching, backoff)
+- [ ] Talk track: MCP tool design — schema choices and why
+
+### Cloud / security engineer (source: Phase 8)
+
+- [ ] Resume bullets: AI workloads on AWS, IaC, least privilege, policy-as-code gate
+- [ ] Threat model for the AWS stack (data flows, trust boundaries, mitigations)
+- [ ] Write-up: encryption, no-retention design, and audit trail for law-firm data
+- [ ] Cost write-up: $ per document, budget alarms, teardown
+- [ ] Talk track: running AI workloads in a regulated environment (Federal Reserve background)
+
+### Solutions / forward-deployed engineer (source: Phases 5, 9)
+
+- [ ] Resume bullets: customer-facing tooling, integrations, demos
+- [ ] Integration guide: "add PinciteCheck to your agent in 10 minutes" (MCP config + API)
+- [ ] Customer one-pager: walkthrough of the attorney report
+- [ ] Talk track: mock discovery — map a target company's product to a PinciteCheck integration
+
+### Company pitches
+
 - [ ] One-page pitch: Harvey
 - [ ] One-page pitch: StrongSuit
 - [ ] One-page pitch: Free Law Project
 - [ ] Research + pitch other target companies
-- [ ] 3–5 minute demo video
-- [ ] Blog post on methodology
 
 ---
 
