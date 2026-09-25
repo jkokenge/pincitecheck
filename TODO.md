@@ -24,9 +24,9 @@ disclaimer, and attributions, and a working CourtListener token with known quota
 - [x] Choose code license: Apache-2.0 (`LICENSE` + `pyproject.toml`); dataset license deferred to Phase 7
 - [x] CourtListener account + API token; `.env.example`; token loaded from env, never committed
 - [x] Script to call the usage endpoint; record actual quota in `docs/notes/courtlistener.md`
-- [ ] One manual citation-lookup call; record response shape and any per-endpoint limits  ← CURRENT
-- [ ] Estimate benchmark-scale call volume (LePhantomCite: ~4,500 citations + tier 2 opinion fetches); decide whether FLP membership is needed (a $10/mo tier exists — confirm it actually raises API limits before paying)
-- [ ] README stub: purpose, not-legal-advice disclaimer, attributions (FLP/CourtListener, Charlotin CC BY), CI badge
+- [x] One manual citation-lookup call; record response shape and any per-endpoint limits
+- [x] Estimate benchmark-scale call volume (see `docs/notes/courtlistener.md`); FLP membership not needed for limits
+- [ ] README stub: purpose, not-legal-advice disclaimer, attributions (FLP/CourtListener, Charlotin CC BY), CI badge  ← CURRENT
 
 ---
 
