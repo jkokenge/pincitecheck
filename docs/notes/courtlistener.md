@@ -119,17 +119,26 @@ Tier 2 opinion fetches are separate requests and will hit the daily cap first.
 
 ## Benchmark call-volume estimate (2026-09-25)
 
-LePhantomCite (Liu, Stammbach & Henderson, arXiv 2606.21155), from the paper:
+LePhantomCite — Liu, Stammbach & Henderson, "Who Checks the Citations? Benchmarking Legal
+Hallucination Detection," arXiv 2606.21155. Dataset card:
+https://huggingface.co/datasets/ai-law-society-lab/Legal_Phantom_Citation (CC BY 4.0).
 
-- 1,300 entries: 1,000 appellate-brief excerpts (245 federal briefs, 2012–2021, via
-  CourtListener) + 300 LLM-generated holdings (from Dahl et al. 2024).
+- 1,300 entries: 1,000 appellate-brief excerpts (13 circuits, 2012–2021, via CourtListener)
+  + 300 LLM-generated holdings (from Dahl et al. 2024).
+- The 1,000 brief excerpts are **balanced: 500 with injected hallucinations, 500 clean**.
 - 4,499 citation instances, 1,107 hallucinated. Median 2, max 18 citations per entry.
-- 70/30 train/test split → 390 test entries (~1,350 citations, assuming even spread).
+- Files: `eval.jsonl` (390 entries, 321 hallucinations — the split the paper reports on)
+  and `aux_train.jsonl` (910 entries; not used in the paper, "may be noisier").
+- Fields: `text` (excerpt) and `hallucinations` (span → type; `{}` when clean). Labels
+  mark only the erroneous spans; correct citations are unlabeled.
 - The dataset ships brief context only — **not** the text of cited opinions.
+
+Eval-split counts by type: non-existent 32, case-name mismatch 63, incorrect pincite 53,
+verbatim misquote 42, content misrepresentation 131 (tier 3).
 
 | Run | Tier 1 (citation-lookup) | Tier 2 (opinion fetches) |
 |---|---|---|
-| Test split (~1,350 cites) | ~6 requests, ~23 min | ≤ ~1,350 fetches → ~6 days at 250/day |
+| Eval split (390 entries, ~1,350 cites est.) | ~6 requests, ~23 min | ≤ ~1,350 fetches → ~6 days at 250/day |
 | Full set (4,499 cites) | ~18 requests, ~75 min | ≤ ~4,500 fetches → ~18 days at 250/day |
 
 Tier 2 figures are upper bounds. Real volume is lower because:

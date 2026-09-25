@@ -15,8 +15,8 @@ carries its provenance: source URL, retrieved text, timestamp, and confidence.
 It's vendor-neutral and will ship as a Python library, a REST API, and an MCP server, so
 any legal AI system or agent can call it. It's evaluated on
 [LePhantomCite](https://arxiv.org/abs/2606.21155), a public legal-hallucination benchmark,
-plus CiteBench, a set of clean briefs and real-world error patterns that fills
-LePhantomCite's gaps.
+plus PinciteCheck's own eval sets — full-length clean briefs and real-world error patterns —
+that cover what LePhantomCite doesn't.
 
 > **Status:** early development (Phase 0: foundation). Not yet usable.
 
@@ -42,9 +42,12 @@ uv run pytest
 - **Case law data:** [CourtListener](https://www.courtlistener.com/), a project of
   [Free Law Project](https://free.law/). Used via its REST API within its rate limits and
   terms of service.
-- **LePhantomCite:** Liu, Stammbach & Henderson, *LePhantomCite*, Princeton University,
-  2026, [arXiv:2606.21155](https://arxiv.org/abs/2606.21155). Licensed
-  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+- **LePhantomCite:** Patty Liu, Dominik Stammbach & Peter Henderson, "Who Checks the
+  Citations? Benchmarking Legal Hallucination Detection," 2026,
+  [arXiv:2606.21155](https://arxiv.org/abs/2606.21155). Dataset:
+  [ai-law-society-lab/Legal_Phantom_Citation](https://huggingface.co/datasets/ai-law-society-lab/Legal_Phantom_Citation),
+  licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Its 300 LLM-generated
+  holdings derive from [Dahl et al. (2024)](https://doi.org/10.1093/jla/laae003).
 - **AI Hallucination Cases Database:** AI Hallucination Cases Database, Damien Charlotin,
   https://www.damiencharlotin.com/hallucinations/. Licensed
   [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).

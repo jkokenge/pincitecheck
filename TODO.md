@@ -64,6 +64,8 @@ Check whether each cited case exists, within CourtListener's rate limits.
 - [ ] citation-lookup batching (≤250 citations per request)
 - [ ] SQLite cache layer + tests
 - [ ] Status mapping: found / not found / ambiguous / error; result model with provenance
+- [ ] Not-found wording: report "not found in CourtListener", never "nonexistent"; add a coverage-gap likelihood hint (valid reporter + plausible volume/page vs. impossible volume)
+- [ ] Flag citations we extracted but the API didn't return (silently dropped, e.g. invented reporters) as "unrecognized — needs review"
 - [ ] CLI: `pincitecheck brief.pdf` prints tier 1 results
 - [ ] ADR 0002: caching strategy
 - [ ] README section + sample output (Phase 2 showcase)
@@ -106,6 +108,7 @@ brief, with a W% false-flag rate on clean briefs" — plus a minimal HTML report
 - [ ] Gap analysis: which error patterns LePhantomCite lacks; add a small Set B only for those
 - [ ] Benchmark runner: precision, recall, false-flag rate, latency, cost per tier and per error type
 - [ ] Comparison table vs. the paper's baselines (same subsets, same metrics)
+- [ ] Coverage-gap metric: % of LePhantomCite's real (Westlaw-verified) citations that CourtListener can't find; list the misses
 - [ ] Minimal HTML report (citation, tier verdicts, evidence, links, disclaimer)
 - [ ] Results write-up + README Milestone 1 section (content-misrepresentation items marked as tier 3, deferred to Phase 7)
 
@@ -151,7 +154,7 @@ Judge whether the cited passage supports the brief's proposition, and measure th
 
 Full benchmark across tiers and systems, published.
 
-**Deliverable:** Published CiteBench sets, methodology, and results — including tier 3 on
+**Deliverable:** Published PinciteCheck eval sets, methodology, and results — including tier 3 on
 LePhantomCite and the real-world set (GitHub, optionally Hugging Face).
 
 - [ ] Tier 3 run on LePhantomCite content-misrepresentation items; compare with paper baselines
@@ -162,7 +165,7 @@ LePhantomCite and the real-world set (GitHub, optionally Hugging Face).
 - [ ] Collect legal AI tool outputs (manual exports only)
 - [ ] Agent benchmark: agent with vs. without PinciteCheck + CourtListener MCP
 - [ ] Share vendor results privately with vendors
-- [ ] Choose CiteBench dataset license (likely CC BY 4.0 — must be compatible with Charlotin CC BY and LePhantomCite terms)
+- [ ] Choose eval-set dataset license (likely CC BY 4.0 — must be compatible with Charlotin CC BY and LePhantomCite terms)
 - [ ] Methodology doc
 - [ ] Publish dataset + results (anonymized vendors by default)
 
@@ -213,6 +216,7 @@ talk track — plus company pitches, demo video, and blog post ready to send.
 ### Shared
 
 - [ ] Upstream contribution to eyecite or a related FLP repo (do earlier if an opportunity arises)
+- [ ] Send FLP the coverage-gap list from Phase 4 (cases missing from CourtListener) — narrows the free-access gap and is a first contact
 - [ ] Core story: one paragraph (problem → approach → result) every pitch builds from
 - [ ] README final pass: problem, architecture diagram, benchmark results, limitations
 - [ ] Narrative link to the IaC Security Agent project

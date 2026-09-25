@@ -4,7 +4,7 @@ PinciteCheck is a vendor-neutral citation verification tool for legal AI — a P
 REST API, and MCP server that checks whether cited U.S. cases exist, whether quotes and
 pincites are accurate, and whether the cited passage supports the brief's proposition.
 It is evaluated on LePhantomCite (Princeton's public legal-hallucination benchmark) plus
-CiteBench, its own reproducible sets of clean briefs and real-world-patterned cases, with
+its own reproducible eval sets of full-length clean briefs and real-world-patterned cases, with
 results compared across legal AI systems. It is a portfolio project aimed at legal AI companies (Harvey, StrongSuit,
 Free Law Project), framed as verification assistance for attorneys — not legal advice.
 
@@ -45,10 +45,15 @@ Free Law Project), framed as verification assistance for attorneys — not legal
   taxonomy already exists (Liu, Stammbach & Henderson, Princeton, 2026, arXiv 2606.21155).
   Independent numbers are more credible than self-built mutations, and it reports that
   LLM agents struggle on pincites and misquotes — exactly where deterministic tier 2 aims.
-  CiteBench covers only what it lacks: clean briefs (false-flag rate) and real-world
-  (Charlotin-style) patterns. Never claim CiteBench is the first legal citation benchmark.
+  PinciteCheck's own eval sets cover only what it lacks: full-length clean briefs (false-flag rate at real
+  brief length — LePhantomCite's clean data is short excerpts, ~2 citations each) and
+  real-world (Charlotin-style) patterns. Never present the eval sets as a new or
+  first legal citation benchmark.
 - **Benchmark split into v0 (tiers 1–2) and v1 (full)** — real numbers exist before any
   hand-labeling; tier 3 results on LePhantomCite come in v1.
+- **No separate name for the eval sets — "PinciteCheck eval sets"** — "CiteBench" collided
+  with LegalCiteBench (ICML 2026, arXiv 2605.10186); one brand is easier to remember, and
+  the pitch is the tool, with the datasets as supporting evidence.
 - **MCP server before tier 3 and AWS** — cheap once the core exists, and agent tool design
   is a core pitch angle.
 - **AWS deployment after the benchmark** — Terraform wraps a stable pipeline rather than
@@ -87,7 +92,7 @@ Deliberately unresolved. Decide when the listed phase forces it, then move the d
 | HTTP client | httpx + tenacity (backoff) |
 | Models / schemas | pydantic |
 | Case law source | CourtListener REST API v4 (citation-lookup, search, opinions/clusters, usage) |
-| Benchmark data | LePhantomCite (Hugging Face) + CiteBench sets |
+| Benchmark data | LePhantomCite (Hugging Face) + PinciteCheck eval sets |
 | Local cache | SQLite |
 | LLM judge | Model-agnostic interface; Claude via Bedrock + one other (TBD) |
 | REST API | FastAPI |
@@ -98,14 +103,14 @@ Deliberately unresolved. Decide when the listed phase forces it, then move the d
 
 ## Build Phases
 
-- **Phase 0** — Foundation ← Current phase.
-- **Phase 1** — Extraction (docx/pdf, eyecite, proposition capture, regex baseline)
+- **Phase 0** — Foundation
+- **Phase 1** — Extraction (docx/pdf, eyecite, proposition capture, regex baseline) ← Current phase.
 - **Phase 2** — Tier 1: Existence
 - **Phase 3** — Tier 2: Accuracy
 - **Phase 4** — Benchmark v0: LePhantomCite + clean briefs, tiers 1–2, minimal HTML report (Milestone 1)
 - **Phase 5** — Tool surfaces: FastAPI + MCP server (Milestone 2)
 - **Phase 6** — Tier 3: Support + judge evaluation
-- **Phase 7** — Benchmark v1: tier 3 on LePhantomCite, CiteBench real-world set, system comparison, publication (Milestone 3)
+- **Phase 7** — Benchmark v1: tier 3 on LePhantomCite, real-world eval set, system comparison, publication (Milestone 3)
 - **Phase 8** — AWS reference architecture (Terraform)
 - **Phase 9** — Attorney-facing report UX
 - **Phase 10** — Outreach & role packaging: per-role materials (AI/ML, backend/platform, cloud/security, solutions/FDE), company pitches, demo video, blog post (eyecite PR opportunistically, any phase)
