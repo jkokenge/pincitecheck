@@ -23,8 +23,8 @@ disclaimer, and attributions, and a working CourtListener token with known quota
 - [x] GitHub Actions CI: ruff + pytest on push and PR
 - [x] Choose code license: Apache-2.0 (`LICENSE` + `pyproject.toml`); dataset license deferred to Phase 7
 - [x] CourtListener account + API token; `.env.example`; token loaded from env, never committed
-- [ ] Script to call the usage endpoint; record actual quota in `docs/notes/courtlistener.md`  ← CURRENT
-- [ ] One manual citation-lookup call; record response shape and any per-endpoint limits
+- [x] Script to call the usage endpoint; record actual quota in `docs/notes/courtlistener.md`
+- [ ] One manual citation-lookup call; record response shape and any per-endpoint limits  ← CURRENT
 - [ ] Estimate benchmark-scale call volume (LePhantomCite: ~4,500 citations + tier 2 opinion fetches); decide whether FLP membership is needed (a $10/mo tier exists — confirm it actually raises API limits before paying)
 - [ ] README stub: purpose, not-legal-advice disclaimer, attributions (FLP/CourtListener, Charlotin CC BY), CI badge
 
@@ -231,7 +231,7 @@ talk track — plus company pitches, demo video, and blog post ready to send.
 
 - [ ] Resume bullets: API design, caching, rate-limit-aware client
 - [ ] API polish: OpenAPI docs, request/response examples, versioned endpoint
-- [ ] Write-up: designing around a 125-requests/day upstream quota (caching, batching, backoff)
+- [ ] Write-up: designing around a 250-requests/day upstream quota (caching, batching, backoff)
 - [ ] Talk track: MCP tool design — schema choices and why
 
 ### Cloud / security engineer (source: Phase 8)

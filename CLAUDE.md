@@ -15,7 +15,7 @@ Free Law Project), framed as verification assistance for attorneys — not legal
   inspired the project may be described as a process only, never named or included.
 - Not-legal-advice disclaimer in the README and in every generated report.
 - CC BY 4.0 attribution for any Charlotin AI Hallucination Cases Database content.
-- Respect CourtListener rate limits (default 5/min, 50/hour, 125/day, rolling) and terms
+- Respect CourtListener rate limits (10/min, 100/hour, 250/day, rolling) and terms
   of service. No scraping. All lookups go through the cache.
 - No automation of vendor web apps. Vendor outputs come from manual exports only.
 - Vendor benchmark results: check each vendor's terms before publishing, share results
