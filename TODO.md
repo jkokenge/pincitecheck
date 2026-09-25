@@ -19,8 +19,8 @@ disclaimer, and attributions, and a working CourtListener token with known quota
 - [x] Create GitHub repo; `git init`; add `.gitignore` + `.editorconfig`
 - [x] `uv init` — `pyproject.toml` (Python 3.12), src layout with `pincitecheck` package
 - [x] Configure ruff + pytest in `pyproject.toml`; add one smoke test
-- [ ] pre-commit hooks: ruff, ruff-format, basic file checks, secret scanning  ← CURRENT
-- [ ] GitHub Actions CI: ruff + pytest on push and PR
+- [x] pre-commit hooks: ruff, ruff-format, basic file checks, secret scanning
+- [ ] GitHub Actions CI: ruff + pytest on push and PR  ← CURRENT
 - [ ] Choose licenses (code, and later the CiteBench dataset)
 - [ ] CourtListener account + API token; `.env.example`; token loaded from env, never committed
 - [ ] Script to call the usage endpoint; record actual quota in `docs/notes/courtlistener.md`
