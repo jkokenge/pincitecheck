@@ -39,6 +39,24 @@ need an import step: File → Import, delimiter `|`. Export back as pipe-delimit
 
 Label **case citations in the body and footnotes only**.
 
+**Body** means the introduction or preliminary statement, statement of facts, legal
+standard, argument, and conclusion, plus their footnotes. Skip everything else:
+
+- Front matter: cover page and caption, table of contents, **table of authorities**, and
+  appellate extras (corporate disclosure, statement on oral argument, statement of related
+  cases, certificate of interested persons).
+- Back matter: signature block, certificates of compliance and of service, appendices,
+  exhibits, proposed orders.
+- Every page: the court's header stamp (`Case 1:26-cv-04645 Document 49 Filed … Page 11 of 34`),
+  page numbers, and pleading-paper line numbers.
+
+The table of authorities is skipped while labeling but is useful afterwards as a checklist:
+every case it lists should appear in your sheet as at least one `full` row. Not every
+brief has one.
+
+Because the labels exclude front and back matter, the extractor must skip those sections
+too, or it will be scored on citations that aren't in the answer key.
+
 Label:
 - Every citation to a court decision, including Westlaw (`2024 WL 123456`) and Lexis cites.
 - Each reporter in a parallel cite as its own row, with the same `paren`:
