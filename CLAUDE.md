@@ -44,8 +44,10 @@ Free Law Project), framed as verification assistance for attorneys — not legal
 - **LePhantomCite as the external evaluation set** — a public benchmark with the same error
   taxonomy already exists (Liu, Stammbach & Henderson, Princeton, 2026, arXiv 2606.21155).
   Independent numbers are more credible than self-built mutations, and it reports that
-  LLM agents struggle on pincites and misquotes — exactly where deterministic tier 2 aims.
-  PinciteCheck's own eval sets cover only what it lacks: full-length clean briefs (false-flag rate at real
+  no LLM agent reliably detects wrong pincites (best: GPT-5, 52.8% recall) — where
+  deterministic tier 2 aims. Top models do catch misquotes (GPT-5: 95.2%), so tier 2's
+  edge there is cost and reproducibility, not recall. PinciteCheck's own eval sets cover
+  only what it lacks: full-length clean briefs (false-flag rate at real
   brief length — LePhantomCite's clean data is short excerpts, ~2 citations each) and
   real-world (Charlotin-style) patterns. Never present the eval sets as a new or
   first legal citation benchmark.

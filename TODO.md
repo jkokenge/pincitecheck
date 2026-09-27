@@ -124,7 +124,7 @@ Make PinciteCheck callable by any service or agent.
 - [ ] MCP server: `verify_citations` tool with clear schema and descriptions
 - [ ] Dockerfile + local run instructions
 - [ ] Test the MCP server from Claude Desktop; record a demo clip
-- [ ] ADR 0003: MCP tool design
+- [ ] ADR 0003: MCP tool design — differentiate from existing CourtListener MCP servers (see `docs/notes/landscape.md`); lead with tier 2
 
 ---
 
