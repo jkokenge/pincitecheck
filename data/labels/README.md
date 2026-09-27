@@ -3,8 +3,12 @@
 Hand-labeled case citations for the 10 briefs in `data/manifest/phase1_briefs.yaml`.
 These are the answer key the regex and eyecite extractors are scored against (ADR 0001).
 
-One CSV per brief: `b01.csv` … `b10.csv`. One row per citation, in reading order.
-Open in VS Code, Excel, or Numbers; if a spreadsheet app asks, save as **CSV (UTF-8)**.
+One pipe-delimited file per brief: `b01.psv` … `b10.psv`. One row per citation, in reading
+order. Pipes, not commas, because citations are full of commas and never contain pipes, so
+no quoting is needed.
+
+Edit in VS Code (the Rainbow CSV extension colors columns and detects `|`). Excel and Numbers
+need an import step: File → Import, delimiter `|`. Export back as pipe-delimited text.
 
 ## Columns
 
@@ -65,17 +69,18 @@ The text:
 
 The rows (numbering starts at 1 here only for the example):
 
-```csv
-cite_no,pdf_page,raw_text,form,case_name,volume,reporter,page,pincite,paren,refers_to,in_footnote,notes
-1,12,"Doe v. Columbia Univ., 831 F.3d 46, 59 (2d Cir. 2016)",full,Doe v. Columbia Univ.,831,F.3d,46,59,2d Cir. 2016,,n,
-2,12,"Bell Atl. Corp. v. Twombly, 550 U.S. 544, 570 (2007)",full,Bell Atl. Corp. v. Twombly,550,U.S.,544,570,2007,,n,
-3,12,"Ashcroft v. Iqbal, 556 U.S. 662, 678 (2009)",full,Ashcroft v. Iqbal,556,U.S.,662,678,2009,,n,
-4,12,"Twombly, 550 U.S. at 555 n.3",short,Twombly,550,U.S.,,555 n.3,,2,n,
-5,12,"Iqbal, 556 U.S. at 678",short,Iqbal,556,U.S.,,678,,3,n,
+```
+cite_no|pdf_page|raw_text|form|case_name|volume|reporter|page|pincite|paren|refers_to|in_footnote|notes
+1|12|Doe v. Columbia Univ., 831 F.3d 46, 59 (2d Cir. 2016)|full|Doe v. Columbia Univ.|831|F.3d|46|59|2d Cir. 2016||n|
+2|12|Bell Atl. Corp. v. Twombly, 550 U.S. 544, 570 (2007)|full|Bell Atl. Corp. v. Twombly|550|U.S.|544|570|2007||n|
+3|12|Ashcroft v. Iqbal, 556 U.S. 662, 678 (2009)|full|Ashcroft v. Iqbal|556|U.S.|662|678|2009||n|
+4|12|Twombly, 550 U.S. at 555 n.3|short|Twombly|550|U.S.||555 n.3||2|n|
+5|12|Iqbal, 556 U.S. at 678|short|Iqbal|556|U.S.||678||3|n|
 ```
 
-Wrap `raw_text` in double quotes whenever it contains a comma (spreadsheet apps do this
-for you).
+Every row has 13 fields, so 12 pipes, including trailing empty fields. Leave empty
+fields empty; don't write `none` or `-`. Don't quote anything: a `"` is kept as part of the
+text.
 
 ## Tips
 
