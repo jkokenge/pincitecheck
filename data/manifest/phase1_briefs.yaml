@@ -1,0 +1,246 @@
+# Phase 1 extraction set: 10 public RECAP briefs.
+#
+# Purpose: ground truth for comparing regex vs. eyecite citation extraction (ADR 0001).
+# These are NOT verified-clean briefs; citation accuracy is not assumed or measured here.
+#
+# Source: CourtListener RECAP Archive (Free Law Project). Selected 2026-09-27 via the
+# REST API v4 search endpoint (type=rd), 23 API calls. PDFs are not committed: they
+# download to data/raw/ (gitignored) and are checked against sha256 below. The briefs'
+# authors hold copyright in them; the manifest records where to get them, not the text.
+#
+# Selection criteria:
+#   - Text-layer PDFs only, no scans (Phase 1 measures extraction, not OCR).
+#   - Coverage of hard citation forms: Id., supra, short cites, string cites, parallel
+#     cites, pincite ranges, footnote citations, WL cites, state and specialty reporters.
+#   - Spread across courts, circuits, motion types, and filer roles.
+#   - Non-sensitive subject matter: no criminal, family, immigration, medical, minors,
+#     sealed/redacted filings, or Doe parties.
+#
+# Coverage:
+#   Courts:    CA11, D.D.C., S.D.N.Y. (x2), E.D. Pa., E.D. Va., N.D. Tex., W.D. Tex.,
+#              C.D. Cal., N.D. Ga. (circuits: 2, 3, 4, 5, 9, 11, D.C.)
+#   Types:     appellate brief, bankruptcy appeal brief, MSJ, MTD (x2), opposition to
+#              MTD (x2), claim construction, class certification, opposition to PI
+#   Filers:    plaintiffs, defendants, appellants, federal government
+#   Pages:     28-75 (400 total)
+#
+# Known gaps (deliberate or to fill later):
+#   - No DOCX. RECAP is PDF-only; convert one brief for the DOCX extraction task and
+#     record that it was converted.
+#   - No state-court filings (not in RECAP), no scanned PDFs, no pro se briefs.
+#   - All filed 2023-2026; older citation habits (e.g., L. Ed. parallels) are sparse.
+#
+# Fields:
+#   features           Why the brief was picked. From a regex screening pass over the
+#                      PDF text; indicative only, not ground truth.
+#   cl_cited_opinions  Count of opinions CourtListener itself resolved from this
+#                      document (search result "cites"). A rough external reference
+#                      point for extractor recall, not a label.
+
+briefs:
+  - id: b01
+    case_name: "777 Partners LLC v. Pagnanelli"
+    court: ca11
+    docket_number: "26-11111"
+    appeal_from: S.D. Fla.
+    document_number: 30
+    date_filed: 2026-09-21
+    brief_type: appellate_brief
+    filed_by: defendant-appellant
+    pages: 75
+    features:
+      - 11th Cir. appellate format with table of authorities
+      - Florida state reporters (So. 2d / So. 3d)
+      - heavy record cites and pincite ranges
+    cl_cited_opinions: 31
+    recap_document_id: 494512988
+    docket_url: https://www.courtlistener.com/docket/73245134/777-partners-llc-v-christopher-pagnanelli/
+    document_url: https://www.courtlistener.com/docket/73245134/30/777-partners-llc-v-christopher-pagnanelli/
+    pdf_url: https://storage.courtlistener.com/recap/gov.uscourts.ca11.95545/gov.uscourts.ca11.95545.30.0.pdf
+    sha256: c6606bb94af4d3da3a129db686f88b76a4fda964ba39005c8da16a70c78f41a9
+
+  - id: b02
+    case_name: "In re Stream TV Networks, Inc."
+    court: paed
+    docket_number: "2:24-cv-06397"
+    document_number: 16
+    date_filed: 2025-01-15
+    brief_type: bankruptcy_appeal_brief
+    filed_by: appellant
+    pages: 50
+    features:
+      - bankruptcy reporter (B.R.) cites
+      - footnote citations
+      - consolidated appeal caption
+    cl_cited_opinions: 23
+    recap_document_id: 427287585
+    docket_url: https://www.courtlistener.com/docket/69425378/in-re-stream-tv-networks-inc/
+    document_url: https://www.courtlistener.com/docket/69425378/16/in-re-stream-tv-networks-inc/
+    pdf_url: https://storage.courtlistener.com/recap/gov.uscourts.paed.630615/gov.uscourts.paed.630615.16.0.pdf
+    sha256: 001b33aaf6a1a9bd5b303749a52ade42036506ce4a245b2095b4d1bce40ebe74
+
+  - id: b03
+    case_name: "Texas International Produce Association v. Occupational Safety & Health Administration"
+    court: txnd
+    docket_number: "2:25-cv-00261"
+    document_number: 4
+    date_filed: 2025-12-03
+    brief_type: summary_judgment
+    filed_by: plaintiffs
+    pages: 40
+    features:
+      - heavy Id. usage
+      - parallel Supreme Court cites (U.S. / S. Ct.)
+      - many statute and regulation cites (out-of-scope noise the extractor must skip)
+      - F.4th cites
+    cl_cited_opinions: 43
+    recap_document_id: 461322502
+    docket_url: https://www.courtlistener.com/docket/71988461/texas-international-produce-association-v-occupational-safety-health/
+    document_url: https://www.courtlistener.com/docket/71988461/4/texas-international-produce-association-v-occupational-safety-health/
+    pdf_url: https://storage.courtlistener.com/recap/gov.uscourts.txnd.412450/gov.uscourts.txnd.412450.4.0.pdf
+    sha256: 433cce5947537ee09d99efb214afa705daafdff2b35a53ed2c9750b4a0a25e0c
+
+  - id: b04
+    case_name: "American Alliance for Equal Rights v. Maestra Music, Inc."
+    court: nysd
+    docket_number: "1:26-cv-04645"
+    document_number: 49
+    date_filed: 2026-07-30
+    brief_type: motion_to_dismiss
+    filed_by: defendant (Wicked LLC)
+    pages: 34
+    features:
+      - very heavy Id. usage
+      - supra references
+      - WL cites
+    cl_cited_opinions: 34
+    recap_document_id: 488165674
+    docket_url: https://www.courtlistener.com/docket/73428918/american-alliance-for-equal-rights-v-maestra-music-inc/
+    document_url: https://www.courtlistener.com/docket/73428918/49/american-alliance-for-equal-rights-v-maestra-music-inc/
+    pdf_url: https://storage.courtlistener.com/recap/gov.uscourts.nysd.665320/gov.uscourts.nysd.665320.49.0.pdf
+    sha256: c18a48b3f61f1d045d3c29f31259ab1ad9e98fbef58e1ac032a5eead7ba142ea
+
+  - id: b05
+    case_name: "Boyd v. Wisdom Natural Brands"
+    court: cacd
+    docket_number: "2:25-cv-12080"
+    document_number: 19
+    date_filed: 2026-04-10
+    brief_type: opposition_to_motion_to_dismiss
+    filed_by: plaintiff
+    pages: 28
+    features:
+      - California pleading paper (line numbers 1-28 interleaved with text)
+      - California state reporters (Cal. App., Cal. Rptr.)
+      - footnote-heavy; supra and infra
+      - string cites
+    cl_cited_opinions: 34
+    recap_document_id: 475508442
+    docket_url: https://www.courtlistener.com/docket/72068053/john-boyd-v-wisdom-natural-brands/
+    document_url: https://www.courtlistener.com/docket/72068053/19/john-boyd-v-wisdom-natural-brands/
+    pdf_url: https://storage.courtlistener.com/recap/gov.uscourts.cacd.1000348/gov.uscourts.cacd.1000348.19.0.pdf
+    sha256: ca125e13fdf05ce35a77803b8ba0fc44582305572a0a57bcea0f6054c6f982dc
+
+  - id: b06
+    case_name: "Daedalus Prime LLC v. Marvell Technology, Inc."
+    court: txwd
+    docket_number: "1:26-cv-00081"
+    document_number: 45
+    date_filed: 2026-06-01
+    brief_type: claim_construction
+    filed_by: plaintiff
+    pages: 38
+    notes: Docket text says "Opening"; the PDF is the plaintiff's responsive claim construction brief.
+    features:
+      - Federal Circuit patent citations
+      - many short cites and pincite ranges
+      - supra references
+      - quote-dense (useful later for tier 2)
+    cl_cited_opinions: 34
+    recap_document_id: 481168151
+    docket_url: https://www.courtlistener.com/docket/72141741/daedalus-prime-llc-v-marvell-technology-inc/
+    document_url: https://www.courtlistener.com/docket/72141741/45/daedalus-prime-llc-v-marvell-technology-inc/
+    pdf_url: https://storage.courtlistener.com/recap/gov.uscourts.txwd.1172884495/gov.uscourts.txwd.1172884495.45.0.pdf
+    sha256: baa1245e942de8f40a2ec94b350c0d392c54f2c9607aa8222fa4d39be6a20b71
+
+  - id: b07
+    case_name: "Boss Studio LLC v. Popov"
+    court: nysd
+    docket_number: "1:26-cv-04323"
+    document_number: 52
+    date_filed: 2026-08-28
+    brief_type: motion_to_dismiss
+    filed_by: defendant
+    pages: 35
+    features:
+      - New York official reporters (N.Y.2d / N.Y.3d, A.D.2d / A.D.3d)
+      - WL cites
+      - copyright case law
+    cl_cited_opinions: 50
+    recap_document_id: 491783960
+    docket_url: https://www.courtlistener.com/docket/73386432/boss-studio-llc-v-popov/
+    document_url: https://www.courtlistener.com/docket/73386432/52/boss-studio-llc-v-popov/
+    pdf_url: https://storage.courtlistener.com/recap/gov.uscourts.nysd.664735/gov.uscourts.nysd.664735.52.0.pdf
+    sha256: 9c2ec85d44ea066a7eb863df360f465b28f24e54bd0cf11c694eda80d777f8d8
+
+  - id: b08
+    case_name: "Trauernicht v. Genworth Financial Inc."
+    court: vaed
+    docket_number: "3:22-cv-00532"
+    document_number: 144
+    date_filed: 2023-10-16
+    brief_type: class_certification
+    filed_by: plaintiffs
+    pages: 30
+    features:
+      - WL-heavy (unreported decisions dominate)
+      - F.4th cites
+      - ERISA 401(k) plan class action (no individual medical information)
+    cl_cited_opinions: 29
+    recap_document_id: 386704701
+    docket_url: https://www.courtlistener.com/docket/64884320/trauernicht-v-genworth-financial-inc/
+    document_url: https://www.courtlistener.com/docket/64884320/144/trauernicht-v-genworth-financial-inc/
+    pdf_url: https://storage.courtlistener.com/recap/gov.uscourts.vaed.526995/gov.uscourts.vaed.526995.144.0.pdf
+    sha256: 21d782295d99ecc78a3e6199cb0366598d688eeba9ff5866fe8a32f7fa7d6cee
+
+  - id: b09
+    case_name: "Climate United Fund v. Citibank, N.A."
+    court: dcd
+    docket_number: "1:25-cv-00698"
+    document_number: 56
+    date_filed: 2025-03-31
+    brief_type: opposition_to_preliminary_injunction
+    filed_by: federal government defendants
+    pages: 31
+    features:
+      - DOJ brief style
+      - parallel Supreme Court cites
+      - pincite ranges
+      - consolidated caption (three cases)
+    cl_cited_opinions: 43
+    recap_document_id: 434966211
+    docket_url: https://www.courtlistener.com/docket/69718818/climate-united-fund-v-citibank-na/
+    document_url: https://www.courtlistener.com/docket/69718818/56/climate-united-fund-v-citibank-na/
+    pdf_url: https://storage.courtlistener.com/recap/gov.uscourts.dcd.278196/gov.uscourts.dcd.278196.56.0.pdf
+    sha256: 71003566d78d34aee08370af5fe7fe1f956bab4f8bac8e9a7acd3cf076e782da
+
+  - id: b10
+    case_name: "GE Renewable North America, LLC v. SKF USA Inc."
+    court: gand
+    docket_number: "1:25-cv-01157"
+    document_number: 42
+    date_filed: 2024-05-24
+    brief_type: opposition_to_motion_to_dismiss
+    filed_by: plaintiff
+    pages: 28
+    notes: Filed in S.D.N.Y. (23 Civ. 9274) before transfer to N.D. Ga.; the PDF caption shows S.D.N.Y.
+    features:
+      - opposition to dismiss / transfer venue / compel arbitration
+      - Id. usage
+      - parallel Supreme Court cites
+    cl_cited_opinions: 25
+    recap_document_id: 432026364
+    docket_url: https://www.courtlistener.com/docket/69703454/ge-renewable-north-america-llc-v-skf-usa-inc/
+    document_url: https://www.courtlistener.com/docket/69703454/42/ge-renewable-north-america-llc-v-skf-usa-inc/
+    pdf_url: https://storage.courtlistener.com/recap/gov.uscourts.gand.340402/gov.uscourts.gand.340402.42.0.pdf
+    sha256: d34983729899f87addccba0998ab931f9f319fe48f2e3b3e34cb44b5d5da87e2

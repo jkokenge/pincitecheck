@@ -26,7 +26,7 @@ disclaimer, and attributions, and a working CourtListener token with known quota
 - [x] Script to call the usage endpoint; record actual quota in `docs/notes/courtlistener.md`
 - [x] One manual citation-lookup call; record response shape and any per-endpoint limits
 - [x] Estimate benchmark-scale call volume (see `docs/notes/courtlistener.md`); FLP membership not needed for limits
-- [ ] README stub: purpose, not-legal-advice disclaimer, attributions (FLP/CourtListener, Charlotin CC BY), CI badge
+- [x] README stub: purpose, not-legal-advice disclaimer, attributions (FLP/CourtListener, Charlotin CC BY), CI badge
 
 ---
 
@@ -37,16 +37,17 @@ Turn a brief into structured citations, each paired with the proposition it supp
 **Deliverable:** Write-up (ADR 0001) comparing regex vs. eyecite extraction on 10 public
 RECAP briefs, with precision/recall numbers.
 
-- [ ] Select 10 public RECAP briefs; record source URLs in a manifest file  ← CURRENT
+- [x] Select 10 public RECAP briefs; record source URLs in a manifest file (`data/manifest/phase1_briefs.yaml`)
+- [x] Fetch script: download manifest PDFs to `data/raw/` and verify sha256 (`scripts/fetch_briefs.py`)
+- [ ] Hand-label ground-truth citations for briefs 1–5 (blind — before building extractors; rules in `data/labels/README.md`)  ← CURRENT
+- [ ] Hand-label ground-truth citations for briefs 6–10
 - [ ] pydantic models: `Citation` (raw text, volume, reporter, page, pincite, span, proposition)
 - [ ] PDF text extraction (pdfplumber) + tests
-- [ ] DOCX text extraction (python-docx) + tests
+- [ ] DOCX text extraction (python-docx) + tests (convert one manifest brief to DOCX; RECAP is PDF-only)
 - [ ] eyecite extraction of full case citations
 - [ ] Short-form resolution (Id., supra, short cites)
 - [ ] Capture the proposition sentence for each citation
 - [ ] Regex baseline extractor
-- [ ] Hand-label ground-truth citations for briefs 1–5
-- [ ] Hand-label ground-truth citations for briefs 6–10
 - [ ] Comparison script: regex vs. eyecite precision/recall
 - [ ] ADR 0001: eyecite vs. regex (Phase 1 showcase)
 

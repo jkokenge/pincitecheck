@@ -30,6 +30,9 @@ runs/
 # Downloaded benchmark data (fetched by script, not committed)
 data/raw/
 
+# Local copies of papers (redistribution rights unclear; link to arXiv instead)
+referencepapers/
+
 # Terraform (Phase 8)
 .terraform/
 *.tfstate

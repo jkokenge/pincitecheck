@@ -18,7 +18,7 @@ any legal AI system or agent can call it. It's evaluated on
 plus PinciteCheck's own eval sets — full-length clean briefs and real-world error patterns —
 that cover what LePhantomCite doesn't.
 
-> **Status:** early development (Phase 0: foundation). Not yet usable.
+> **Status:** early development (Phase 1: extraction). Not yet usable.
 
 ## Not legal advice
 
@@ -35,6 +35,7 @@ uv sync
 cp .env.example .env              # then add your CourtListener API token
 uv run pre-commit install
 uv run pytest
+uv run python scripts/fetch_briefs.py   # download the Phase 1 briefs to data/raw/
 ```
 
 ## Attributions
