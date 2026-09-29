@@ -111,8 +111,33 @@ Every row has 13 fields, so 12 pipes, including trailing empty fields. Leave emp
 fields empty; don't write `none` or `-`. Don't quote anything: a `"` is kept as part of the
 text.
 
+## Quality checks
+
+Every hand-labeled set has errors. These checks find and measure them; ADR 0001 reports
+the results.
+
+After each brief:
+
+1. **Table-of-authorities check.** Every case the table lists should appear in the sheet as
+   at least one `full` row. Catches missed citations, the costliest error: a missed
+   citation makes a correct extractor look wrong. (Not every brief has a table.)
+2. **Search pass.** Search the PDF's body pages for `Id.`, `supra`, ` v. `, and ` at `, and
+   check each hit against the sheet. Short forms are the easiest to miss.
+
+Once, at least a week after the first pass:
+
+3. **Blind re-label of b04.** Label it again from scratch into `relabel/b04.psv` without
+   opening `b04.psv`. The comparison script scores the two against each other; the
+   agreement rate is the labeler's own error estimate.
+
+Later, when extractors run: re-check the label wherever an extractor disagrees with it, and
+fix it if the label was wrong. Record the number of labels corrected this way. It only
+catches errors the extractor disagreed with. A citation both missed stays missed, which
+is why check 1 matters.
+
 ## Tips
 
 - Label a brief in one sitting if you can; `refers_to` is easy to lose track of across breaks.
-- Search the PDF for `Id.`, `supra`, and ` at ` after a first pass — they're the easiest to miss.
+- After the first brief, ask about a citation only when the pattern is new, not to
+  re-confirm something this guide already covers.
 - Record time spent per brief in the commit message; it becomes a cost number for the ADR.

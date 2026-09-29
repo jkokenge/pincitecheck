@@ -41,6 +41,7 @@ RECAP briefs, with precision/recall numbers.
 - [x] Fetch script: download manifest PDFs to `data/raw/` and verify sha256 (`scripts/fetch_briefs.py`)
 - [ ] Hand-label ground-truth citations for briefs 1–5 (blind — before building extractors; rules in `data/labels/README.md`)  ← CURRENT
 - [ ] Hand-label ground-truth citations for briefs 6–10
+- [ ] Blind re-label of b04 (≥ 1 week after first pass) into `data/labels/relabel/b04.psv`
 - [ ] pydantic models: `Citation` (raw text, volume, reporter, page, pincite, span, proposition)
 - [ ] PDF text extraction (pdfplumber) + tests
 - [ ] DOCX text extraction (python-docx) + tests (convert one manifest brief to DOCX; RECAP is PDF-only)
@@ -48,7 +49,7 @@ RECAP briefs, with precision/recall numbers.
 - [ ] Short-form resolution (Id., supra, short cites)
 - [ ] Capture the proposition sentence for each citation
 - [ ] Regex baseline extractor
-- [ ] Comparison script: regex vs. eyecite precision/recall
+- [ ] Comparison script: regex vs. eyecite precision/recall; labeler self-agreement (b04 vs. its blind re-label)
 - [ ] ADR 0001: eyecite vs. regex (Phase 1 showcase)
 
 ---
