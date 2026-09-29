@@ -33,6 +33,9 @@
 # Fields:
 #   features           Why the brief was picked. From a regex screening pass over the
 #                      PDF text; indicative only, not ground truth.
+#   body_pages         PDF page range to label and to score extractors on: the body only,
+#                      excluding cover, contents, table of authorities, signature block,
+#                      and certificates (see data/labels/README.md). Inclusive.
 #   cl_cited_opinions  Count of opinions CourtListener itself resolved from this
 #                      document (search result "cites"). A rough external reference
 #                      point for extractor recall, not a label.
@@ -48,6 +51,7 @@ briefs:
     brief_type: appellate_brief
     filed_by: defendant-appellant
     pages: 75
+    body_pages: "10-74"
     features:
       - 11th Cir. appellate format with table of authorities
       - Florida state reporters (So. 2d / So. 3d)
@@ -68,6 +72,7 @@ briefs:
     brief_type: bankruptcy_appeal_brief
     filed_by: appellant
     pages: 50
+    body_pages: "9-48"
     features:
       - bankruptcy reporter (B.R.) cites
       - footnote citations
@@ -88,6 +93,7 @@ briefs:
     brief_type: summary_judgment
     filed_by: plaintiffs
     pages: 40
+    body_pages: "9-39"
     features:
       - heavy Id. usage
       - parallel Supreme Court cites (U.S. / S. Ct.)
@@ -109,6 +115,7 @@ briefs:
     brief_type: motion_to_dismiss
     filed_by: defendant (Wicked LLC)
     pages: 34
+    body_pages: "7-32"
     features:
       - very heavy Id. usage
       - supra references
@@ -129,6 +136,7 @@ briefs:
     brief_type: opposition_to_motion_to_dismiss
     filed_by: plaintiff
     pages: 28
+    body_pages: "8-27"
     features:
       - California pleading paper (line numbers 1-28 interleaved with text)
       - California state reporters (Cal. App., Cal. Rptr.)
@@ -150,6 +158,7 @@ briefs:
     brief_type: claim_construction
     filed_by: plaintiff
     pages: 38
+    body_pages: "6-35"
     notes: Docket text says "Opening"; the PDF is the plaintiff's responsive claim construction brief.
     features:
       - Federal Circuit patent citations
@@ -172,6 +181,7 @@ briefs:
     brief_type: motion_to_dismiss
     filed_by: defendant
     pages: 35
+    body_pages: "9-33"
     features:
       - New York official reporters (N.Y.2d / N.Y.3d, A.D.2d / A.D.3d)
       - WL cites
@@ -192,6 +202,7 @@ briefs:
     brief_type: class_certification
     filed_by: plaintiffs
     pages: 30
+    body_pages: "7-28"
     features:
       - WL-heavy (unreported decisions dominate)
       - F.4th cites
@@ -212,6 +223,7 @@ briefs:
     brief_type: opposition_to_preliminary_injunction
     filed_by: federal government defendants
     pages: 31
+    body_pages: "9-31"
     features:
       - DOJ brief style
       - parallel Supreme Court cites
@@ -233,6 +245,7 @@ briefs:
     brief_type: opposition_to_motion_to_dismiss
     filed_by: plaintiff
     pages: 28
+    body_pages: "6-28"
     notes: Filed in S.D.N.Y. (23 Civ. 9274) before transfer to N.D. Ga.; the PDF caption shows S.D.N.Y.
     features:
       - opposition to dismiss / transfer venue / compel arbitration
