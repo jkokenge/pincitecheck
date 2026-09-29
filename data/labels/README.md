@@ -73,6 +73,17 @@ Do **not** label:
 - The brief's own caption and case number.
 - Secondary sources (treatises, law reviews, Restatements).
 
+Docket-number-only case references — the test is whether the brief relies on a *ruling*:
+- **Label** a decision cited as authority by docket number (slip opinions, unpublished
+  orders): `Smith v. Jones, No. 1:20-cv-123, slip op. at 4 (S.D.N.Y. May 1, 2021)`. Use
+  form `full`, leave `volume` / `reporter` / `page` blank, and write `docket cite` in `notes`.
+- **Skip** a reference that only identifies a proceeding, with no decision, date, or
+  pincite: `In re Am. Workers Ins. Servs., Inc., No. 19-44208-mxm11 (Bankr. N.D. Tex.)`.
+
+Citations split across a page break: `pdf_page` is the page where the citation **starts**;
+`raw_text` omits the court's header stamp and page number that fall inside it; `notes` says
+`split across pages`.
+
 When unsure, label it and say why in `notes`. Deciding later is easier than finding it again.
 
 ## Worked example (b04, PDF page 12)
