@@ -144,4 +144,3 @@ is why check 1 matters.
 - Label a brief in one sitting if you can; `refers_to` is easy to lose track of across breaks.
 - After the first brief, ask about a citation only when the pattern is new, not to
   re-confirm something this guide already covers.
-- Record time spent per brief in the commit message; it becomes a cost number for the ADR.
