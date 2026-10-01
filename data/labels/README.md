@@ -125,6 +125,8 @@ After each brief:
    reporter followed by ` at ` (e.g. `So.2d at`, `F.3d at`), and check each hit against the
    sheet. Short forms are the easiest to miss. A bare ` at ` search mostly finds record
    cites (`Doc. 271 at 88`), so it isn't worth the noise.
+   `uv run python scripts/check_labels.py b02` does this and checks the file's format.
+   Run it only after finishing the brief by hand, never before.
 
 Once, at least a week after the first pass:
 
