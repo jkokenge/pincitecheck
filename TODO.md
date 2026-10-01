@@ -124,8 +124,11 @@ Make PinciteCheck callable by any service or agent.
 
 - [ ] FastAPI: `POST /verify` → verification report
 - [ ] MCP server: `verify_citations` tool with clear schema and descriptions
+- [ ] Bring-your-own CourtListener token: each API/MCP user supplies their own key (one shared token can't serve public use within 250/day); document setup in the README
+- [ ] Tool output for non-attorney users (people drafting with AI, including pro se): report facts only (found / quote matches / pincite off by N pages), never advice; "not found" always reads "not found in CourtListener — verify manually"; disclaimer in every response
 - [ ] Dockerfile + local run instructions
 - [ ] Test the MCP server from Claude Desktop; record a demo clip
+- [ ] Self-check demo: ask an agent (Claude Desktop / Claude Code / Cursor) to draft a short brief section; it calls `verify_citations` on its own draft and fixes or flags bad cites before handing it over — the live demo for AI groups
 - [ ] ADR 0003: MCP tool design — differentiate from existing CourtListener MCP servers (see `docs/notes/landscape.md`); lead with tier 2
 
 ---
@@ -139,6 +142,7 @@ Judge whether the cited passage supports the brief's proposition, and measure th
 - [ ] Decide spend ceiling and cost guardrails (Open Decision) — record in CLAUDE.md
 - [ ] Model-agnostic judge interface
 - [ ] Judge prompt → structured JSON {supports | partially | does_not_support | unclear} + rationale
+- [ ] Tier 3 wording for non-attorney users: show what the passage says + confidence, not "your argument is supported" (that reads as legal advice)
 - [ ] Claude via Bedrock adapter
 - [ ] Decide second provider (Open Decision); implement its adapter
 - [ ] Decide on labeling credibility: attorney review of a subset, or a documented limitation
@@ -225,6 +229,7 @@ talk track — plus company pitches, demo video, and blog post ready to send.
 - [ ] Pin the repo on GitHub; add the project to LinkedIn
 - [ ] 3–5 minute demo video + 60-second cut
 - [ ] Blog post on methodology
+- [ ] Local AI group talks. Hook: "AI that checks its own citations" — fake-citation sanctions are well known; the best LLM agent catches ~half of wrong pincites (LePhantomCite); PinciteCheck checks that deterministically and uses an LLM only for tier 3. Framing: a free check for anyone drafting with AI who lacks Westlaw/Lexis, limited to CourtListener coverage. Now: lightning talk on eval design (ground-truth labeling). After Milestone 1: full talk with numbers. After Milestone 2: add the live self-check demo
 
 ### AI / ML engineer (source: Phases 4, 6, 7)
 
