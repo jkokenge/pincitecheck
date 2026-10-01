@@ -121,8 +121,10 @@ After each brief:
 1. **Table-of-authorities check.** Every case the table lists should appear in the sheet as
    at least one `full` row. Catches missed citations, the costliest error: a missed
    citation makes a correct extractor look wrong. (Not every brief has a table.)
-2. **Search pass.** Search the PDF's body pages for `Id.`, `supra`, ` v. `, and ` at `, and
-   check each hit against the sheet. Short forms are the easiest to miss.
+2. **Search pass.** Search the PDF's body pages for `Id.`, `supra`, ` v. `, and each
+   reporter followed by ` at ` (e.g. `So.2d at`, `F.3d at`), and check each hit against the
+   sheet. Short forms are the easiest to miss. A bare ` at ` search mostly finds record
+   cites (`Doc. 271 at 88`), so it isn't worth the noise.
 
 Once, at least a week after the first pass:
 
