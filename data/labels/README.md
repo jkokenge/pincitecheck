@@ -61,6 +61,13 @@ Label:
 - Every citation to a court decision, including Westlaw (`2024 WL 123456`) and Lexis cites.
 - Each reporter in a parallel cite as its own row, with the same `paren`:
   `556 U.S. 662, 129 S. Ct. 1937 (2009)` → two rows. (This matches how eyecite reports them.)
+  Each row's `raw_text` is only its own text as printed, so the parenthetical appears on the
+  last row only. Both rows get the case name; the pincite goes only on the reporter it's
+  printed after. `notes`: `parallel cite with row N`.
+- Subsequent history (`aff'd`, `cert. denied`, `rev'd`, `withdrawn and modified by`) as its
+  own `full` row: it's a different decision by a different court. `raw_text` starts at the
+  volume (the history phrase is left out), `case_name` is blank because none is printed, and
+  `notes` says `subsequent history (aff'd) of row N`.
 - Citations inside quotations and parentheticals (`(quoting Iqbal, 556 U.S. at 678)`).
 - Every citation in a string cite, one row each.
 

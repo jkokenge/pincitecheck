@@ -115,9 +115,15 @@ def check_structure(rows: list[dict], first_page: int, last_page: int) -> list[s
 def check_full_row(row: dict, where: str) -> list[str]:
     problems = []
     is_docket_cite = "docket cite" in row["notes"]
+    is_subsequent_history = "subsequent history" in row["notes"]
     for field in ("case_name", "volume", "reporter", "page"):
-        if not row[field] and not (is_docket_cite and field != "case_name"):
-            problems.append(f"{where}: full cite is missing {field}")
+        if row[field]:
+            continue
+        if is_docket_cite and field != "case_name":
+            continue
+        if is_subsequent_history and field == "case_name":
+            continue
+        problems.append(f"{where}: full cite is missing {field}")
     if row["refers_to"]:
         problems.append(f"{where}: full cite should have an empty refers_to")
     return problems
