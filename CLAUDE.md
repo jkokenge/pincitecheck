@@ -33,8 +33,9 @@ Free Law Project), framed as verification assistance for attorneys — not legal
   (tiers 1–2 fail) from interpretive disagreement (tier 3 unclear), which is not a failure.
 - **LLM only for tier 3** — tiers 1–2 are deterministic (plus fuzzy match), so they are
   cheap, reproducible, and auditable.
-- **eyecite for extraction; regex kept as a baseline** — eyecite handles Id./supra and
-  pincites; the regex comparison becomes an ADR and a benchmark data point.
+- **eyecite for extraction; no regex baseline** — eyecite handles Id./supra and pincites.
+  A hand-written regex would lose predictably and isn't worth the time; Phase 1 instead
+  scores eyecite against hand labels and records what it misses (ADR 0001).
 - **Model-agnostic judge interface, tested on 2+ providers** — model selection is itself
   an eval result, and target companies may not share one provider.
 - **Cache every CourtListener call (SQLite locally → DynamoDB on AWS)** — rate limits make
@@ -88,7 +89,7 @@ Deliberately unresolved. Decide when the listed phase forces it, then move the d
 |---|---|
 | Language / packaging | Python 3.12+, uv (`pyproject.toml` + `uv.lock`) |
 | Lint / format / test | ruff, pytest, pre-commit |
-| Citation extraction | eyecite (regex baseline for comparison) |
+| Citation extraction | eyecite |
 | Document text | python-docx, pdfplumber |
 | Quote matching | rapidfuzz |
 | HTTP client | httpx + tenacity (backoff) |
@@ -106,7 +107,7 @@ Deliberately unresolved. Decide when the listed phase forces it, then move the d
 ## Build Phases
 
 - **Phase 0** — Foundation
-- **Phase 1** — Extraction (docx/pdf, eyecite, proposition capture, regex baseline) ← Current phase.
+- **Phase 1** — Extraction (docx/pdf, eyecite, proposition capture, scoring against hand labels) ← Current phase.
 - **Phase 2** — Tier 1: Existence
 - **Phase 3** — Tier 2: Accuracy
 - **Phase 4** — Benchmark v0: LePhantomCite + clean briefs, tiers 1–2, minimal HTML report (Milestone 1)

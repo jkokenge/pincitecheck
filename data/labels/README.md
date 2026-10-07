@@ -1,7 +1,7 @@
 # Phase 1 ground-truth labels
 
 Hand-labeled case citations for the 10 briefs in `data/manifest/phase1_briefs.yaml`.
-These are the answer key the regex and eyecite extractors are scored against (ADR 0001).
+These are the answer key eyecite extraction is scored against (ADR 0001).
 
 One pipe-delimited file per brief: `b01.psv` … `b10.psv`. One row per citation, in reading
 order. Pipes, not commas, because citations are full of commas and never contain pipes, so
@@ -134,9 +134,9 @@ Once, at least a week after the first pass:
    opening `b04.psv`. The comparison script scores the two against each other; the
    agreement rate is the labeler's own error estimate.
 
-Later, when extractors run: re-check the label wherever an extractor disagrees with it, and
+Later, when eyecite runs: re-check the label wherever eyecite disagrees with it, and
 fix it if the label was wrong. Record the number of labels corrected this way. It only
-catches errors the extractor disagreed with. A citation both missed stays missed, which
+catches errors eyecite disagreed with. A citation both missed stays missed, which
 is why check 1 matters.
 
 ## Tips

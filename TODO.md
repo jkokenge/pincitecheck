@@ -34,8 +34,8 @@ disclaimer, and attributions, and a working CourtListener token with known quota
 
 Turn a brief into structured citations, each paired with the proposition it supports.
 
-**Deliverable:** Write-up (ADR 0001) comparing regex vs. eyecite extraction on 10 public
-RECAP briefs, with precision/recall numbers.
+**Deliverable:** Write-up (ADR 0001) scoring eyecite extraction against hand labels on 10
+public RECAP briefs: precision/recall, plus the citation forms it misses.
 
 - [x] Select 10 public RECAP briefs; record source URLs in a manifest file (`data/manifest/phase1_briefs.yaml`)
 - [x] Fetch script: download manifest PDFs to `data/raw/` and verify sha256 (`scripts/fetch_briefs.py`)
@@ -48,9 +48,8 @@ RECAP briefs, with precision/recall numbers.
 - [ ] eyecite extraction of full case citations
 - [ ] Short-form resolution (Id., supra, short cites)
 - [ ] Capture the proposition sentence for each citation
-- [ ] Regex baseline extractor
-- [ ] Comparison script: regex vs. eyecite precision/recall; labeler self-agreement (b04 vs. its blind re-label)
-- [ ] ADR 0001: eyecite vs. regex (Phase 1 showcase)
+- [ ] Scoring script: eyecite precision/recall vs. labels, broken out by form (full/short/id/supra) and docket cites; labeler self-agreement (b04 vs. its blind re-label)
+- [ ] ADR 0001: eyecite extraction accuracy and gaps (Phase 1 showcase)
 
 ---
 

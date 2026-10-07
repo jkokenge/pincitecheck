@@ -18,7 +18,7 @@ Run it only after finishing a brief by hand. Run earlier, its flags become a lis
 citations to copy, and the labels stop being independent of a regex.
 
 This is a quality check on the labels, not a citation extractor; its regex is
-deliberately loose and is not the Phase 1 regex baseline.
+deliberately loose.
 """
 
 import argparse

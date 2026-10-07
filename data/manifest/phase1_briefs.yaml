@@ -1,6 +1,6 @@
 # Phase 1 extraction set: 10 public RECAP briefs.
 #
-# Purpose: ground truth for comparing regex vs. eyecite citation extraction (ADR 0001).
+# Purpose: ground truth for scoring eyecite citation extraction (ADR 0001).
 # These are NOT verified-clean briefs; citation accuracy is not assumed or measured here.
 #
 # Source: CourtListener RECAP Archive (Free Law Project). Selected 2026-09-27 via the
