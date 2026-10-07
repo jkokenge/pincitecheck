@@ -5,9 +5,9 @@
 Citation verification for legal AI. PinciteCheck checks the U.S. case citations in a brief
 and reports, with evidence, whether each one holds up:
 
-1. **Existence** — does the cited case exist?
-2. **Accuracy** — does the quoted text appear at the cited page (pincite)?
-3. **Support** — does the cited passage support the proposition it's cited for?
+1. **Existence** — Does the case exist?
+2. **Accuracy** — Is the citation accurate? Right volume, page, pincite, and quoted language.
+3. **Support** — Does the cited passage support your sentence? Supported, unclear, or not supported.
 
 Tiers 1 and 2 are deterministic and reproducible; only tier 3 uses an LLM. Every result
 carries its provenance: source URL, retrieved text, timestamp, and confidence.
