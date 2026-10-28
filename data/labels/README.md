@@ -91,6 +91,15 @@ Citations split across a page break: `pdf_page` is the page where the citation *
 `raw_text` omits the court's header stamp and page number that fall inside it; `notes` says
 `split across pages`.
 
+A case cited in full more than once: label each repeat as `full` and note `repeats full cite
+#N`. A later short cite's `refers_to` points to the **first** full cite of that case. Scoring
+treats a link to any full cite of the same case as correct, since they're the same case.
+
+`Id.` skips citations inside parentheticals: it points to the preceding **main** citation,
+not one nested in its `(quoting …)` / `(citing …)`. In b03, `Consumers’ Rsch., 606 U.S. at
+673 (quoting Whitman, 531 U.S. at 475). Id.` → the `Id.` is *Consumers’ Rsch.* `refers_to`
+is the first full cite of that case; `notes` names the skipped citation.
+
 When unsure, label it and say why in `notes`. Deciding later is easier than finding it again.
 
 ## Worked example (b04, PDF page 12)

@@ -48,7 +48,7 @@ public RECAP briefs: precision/recall, plus the citation forms it misses.
 - [ ] eyecite extraction of full case citations
 - [ ] Short-form resolution (Id., supra, short cites)
 - [ ] Capture the proposition sentence for each citation
-- [ ] Scoring script: eyecite precision/recall vs. labels, broken out by form (full/short/id/supra) and docket cites; labeler self-agreement (b04 vs. its blind re-label)
+- [ ] Scoring script: eyecite precision/recall vs. labels, broken out by form (full/short/id/supra) and docket cites; short/id resolution counts as correct if it links to any full cite of the same case; labeler self-agreement (b04 vs. its blind re-label)
 - [ ] ADR 0001: eyecite extraction accuracy and gaps (Phase 1 showcase)
 
 ---
@@ -65,6 +65,7 @@ Check whether each cited case exists, within CourtListener's rate limits.
 - [ ] citation-lookup batching (≤250 citations per request)
 - [ ] SQLite cache layer + tests
 - [ ] Status mapping: found / not found / ambiguous / error; result model with provenance
+- [ ] Metadata cross-check on found cases: printed case name and year vs. CourtListener's — report a mismatch as a typo-level note, not "not found." Real-world test cases: b03 #142 (`(2106)` printed for a 2016 decision); #161 (`81 F.4th 318 (5th Cir. 2024)` — possibly 91 F.4th; 81 F.4th is a 2023 volume; unverified); #165 (`State v. Biden, 10 F.4th 538` — likely Texas v. Biden; unverified)
 - [ ] Not-found wording: report "not found in CourtListener", never "nonexistent"; add a coverage-gap likelihood hint (valid reporter + plausible volume/page vs. impossible volume)
 - [ ] Flag citations we extracted but the API didn't return (silently dropped, e.g. invented reporters) as "unrecognized — needs review"
 - [ ] CLI: `pincitecheck brief.pdf` prints tier 1 results
@@ -82,12 +83,14 @@ Check that quoted text appears at the cited pincite.
 - [ ] Verify CourtListener opinion text fields and page-marker format; record in notes
 - [ ] Fetch + cache opinion text
 - [ ] Pincite page locator
-- [ ] Extract quoted text from the proposition
+- [ ] Pincite-on-first-page check: a pincite equal to the case's first page usually lands on the caption/syllabus (not the opinion) — verify the proposition is actually there, else flag as likely placeholder pincite. Real-world test case: b03 #101 (`Yakus, 321 U.S. at 414`, case starts at 414)
+- [ ] Extract quoted text from the proposition; handle marked alterations — brackets (`declare[]`, `[t]he`, `[the agency]`) and ellipses (`. . .`) are allowed edits: normalize before fuzzy matching, but report them ("matches, 2 marked alterations") rather than silently ignoring them (brackets can change meaning, e.g. `[not]`). Real-world test cases: b03 #94 (`“declare[] and define[]”`), #92 (ellipsis), #126–127 (`[t]he`, `[w]hether`). "(emphasis added)" is also a marked alteration — italics are lost in PDF text extraction, so it doesn't affect matching, but report it: b03 #129
 - [ ] Decide how tier 2 treats paraphrase vs. direct quotes (record the decision)
 - [ ] rapidfuzz matching + similarity thresholds
 - [ ] Evidence snippet and similarity score in the result model
 - [ ] CLI shows tier 2 results
 - [ ] Tests against known-good citations from the Phase 1 briefs
+- [ ] Short-form consistency check: a short cite's volume/reporter must match the full cite it refers to. Real-world test case: b03 #12 prints `258 F.3d at 266` for full cite #10, `779 F.3d 258` (first page typed as the volume)
 
 ---
 
@@ -141,6 +144,7 @@ Judge whether the cited passage supports the brief's proposition, and measure th
 - [ ] Decide spend ceiling and cost guardrails (Open Decision) — record in CLAUDE.md
 - [ ] Model-agnostic judge interface
 - [ ] Judge prompt → structured JSON {supports | partially | does_not_support | unclear} + rationale
+- [ ] Opinion-type awareness: pass the cited opinion's type (majority / concurrence / dissent) to the judge; flag a dissent or concurrence cited for a holding or "binding precedent" claim. Severity depends on disclosure: **high** if the pincite lands in a dissent/concurrence the brief doesn't identify (no "(X, J., dissenting)" parenthetical — presents a non-majority view as the court's); **low / "check this"** if the brief discloses it (citing dissents to show a live debate is legitimate). Real-world test cases (all disclosed → low): b03 #68, #100, #105, #112, #116, #133, #135 (dissents; #68 cited for "remain binding precedent"), #102 (dissent from denial of cert — weakest authority, nothing decided), #33, #38, #89, #113 (concurrences). Disclosure carries over through `Id.`: b03 #114 (`Id. at 685` after #113's "(Rehnquist, J., concurring)") is disclosed, not undisclosed — don't rely on a parenthetical in the cite's own text. Also check the disclosed type is accurate: #113 says "concurring," but Rehnquist's Benzene opinion may be "concurring in the judgment" (unverified; confirm via CourtListener). Also check the named author: #145 attributes a quote at 575 U.S. 86 to "Alito, J., concurring," but that language and page may be Thomas, J., concurring in the judgment (unverified — would be a misattribution). The brief contradicts itself: #146 cites the same page 86 as "(Thomas, J., concurring)" — one page can't belong to two justices' opinions, so #145 or #146 is misattributed (likely #145). Need an undisclosed case for the high-severity path — construct one if none turns up
 - [ ] Tier 3 wording for non-attorney users: show what the passage says + confidence, not "your argument is supported" (that reads as legal advice)
 - [ ] Claude via Bedrock adapter
 - [ ] Decide second provider (Open Decision); implement its adapter
