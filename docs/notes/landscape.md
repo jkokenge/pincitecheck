@@ -1,16 +1,20 @@
 # Landscape — Related Tools, Models, and Benchmarks
 
 What already exists near PinciteCheck, so pitches, talks, and design decisions start from
-the same facts. Checked 2026-09-26 — re-check before any talk or publication; this space
+the same facts. Checked 2026-10-29 — re-check before any talk or publication; this space
 moves fast.
 
 ## Positioning
 
 Existence checking is solved and free (Free Law Project's Citation Lookup API) and several
-open-source tools wrap it. The open problem is **accuracy**: LePhantomCite reports that no
-LLM agent reliably detects wrong pincites (best: GPT-5, 52.8% recall). PinciteCheck's
-distinct contribution is deterministic tier 2 (pincite + quote accuracy), an LLM only for
-tier 3, and public benchmark numbers.
+open-source tools wrap it. The open problem is **accuracy**. LePhantomCite's best agent
+(GPT-5) catches 95.2% of misquotes but only 52.8% of wrong pincites. The paper blames the
+pincite gap mainly on access to sources, not on reasoning: many CourtListener opinions lack
+page markers, and ~10% of real citations are Westlaw/Lexis cites CourtListener can't
+resolve. A CourtListener-based tier 2 shares that ceiling. PinciteCheck's distinct
+contribution is deterministic tier 2 (pincite + quote accuracy), which is cheaper,
+reproducible, and auditable given the same source text; an LLM only for tier 3; and public
+benchmark numbers. Anthropic's cite check (see Commercial) publishes no accuracy numbers.
 
 Framing: "built on CourtListener, a Free Law Project service" — never imply FLP
 endorsement or partnership.
@@ -45,6 +49,7 @@ endorsement or partnership.
 | Product | Notes |
 |---|---|
 | [LawDroid CiteCheck AI](https://www.lawnext.com/2025/06/lawdroid-launches-citecheck-ai-a-fail-safe-against-ai-citation-hallucinations.html) (Jun 2025) | Citation-hallucination checker; its name is why this project isn't called CiteCheck |
+| [Claude for Legal — Cite check](https://claude.com/resources/articles/introducing-artifacts-for-legal-work) (Oct 2026) | Anthropic-built artifact. It compares a document with sources the user uploads or connects, and flags mismatched quotes, wrong page numbers, and claims the sources don't support. Claude does the first pass. No accuracy numbers published, and no existence check described. Users bring paginated sources, which avoids the pincite gap. Tiers 2–3: the most direct competitor |
 | Westlaw, Lexis | Hold pagination (star paging) that free sources often lack — the root of the pincite gap |
 
 ## Real-world tracking

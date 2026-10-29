@@ -44,10 +44,15 @@ Free Law Project), framed as verification assistance for attorneys — not legal
   artifact at each stage instead of one big reveal.
 - **LePhantomCite as the external evaluation set** — a public benchmark with the same error
   taxonomy already exists (Liu, Stammbach & Henderson, Princeton, 2026, arXiv 2606.21155).
-  Independent numbers are more credible than self-built mutations, and it reports that
-  no LLM agent reliably detects wrong pincites (best: GPT-5, 52.8% recall) — where
-  deterministic tier 2 aims. Top models do catch misquotes (GPT-5: 95.2%), so tier 2's
-  edge there is cost and reproducibility, not recall. PinciteCheck's own eval sets cover
+  Independent numbers are more credible than self-built mutations. Its best agent (GPT-5)
+  catches 95.2% of misquotes but only 52.8% of wrong pincites. The paper blames the pincite
+  gap mainly on access to sources, not on reasoning: many CourtListener opinions lack page
+  markers, and ~10% of real citations are Westlaw/Lexis cites CourtListener can't resolve.
+  Tier 2 uses CourtListener too, so it shares that ceiling. Its claimed edge on both
+  pincites and misquotes is therefore cost, reproducibility, and auditability given the
+  same source text, not higher recall, unless the benchmark shows otherwise. Before building
+  pincite matching, measure the ceiling: the share of LePhantomCite citations whose
+  CourtListener text has page markers. PinciteCheck's own eval sets cover
   only what it lacks: full-length clean briefs (false-flag rate at real
   brief length — LePhantomCite's clean data is short excerpts, ~2 citations each) and
   real-world (Charlotin-style) patterns. Never present the eval sets as a new or
