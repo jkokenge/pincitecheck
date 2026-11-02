@@ -35,6 +35,11 @@ need an import step: File → Import, delimiter `|`. Export back as pipe-delimit
 - **id** — `Id.` or `id.` pointing to the immediately preceding **case** citation: `Id. at 679`
 - **supra** — `Twombly, supra, at 556`
 
+A Westlaw or Lexis short cite repeats the database number: `Areu, 2021 WL 4124226, at *9`.
+Label it `short` and fill `volume` / `reporter` / `page` (`2021` / `WL` / `4124226`), since
+that number is the only identifier printed. `notes`: `WL short form`. eyecite will likely
+read it as `full`.
+
 ## What counts — and what doesn't
 
 Label **case citations in the body and footnotes only**.
@@ -79,6 +84,10 @@ Do **not** label:
 - Record and docket cites (`Compl. ¶ 45`, `ECF No. 12 at 5`, `A-001`).
 - The brief's own caption and case number.
 - Secondary sources (treatises, law reviews, Restatements).
+- A case named in running text with no reporter or pincite (`Even more so than in Hollander, …`,
+  `the Reid factors`). It isn't a citation.
+- Cross-references to the brief's own sections (`see supra Section I.A`). The search pass flags
+  them because they contain `supra`.
 
 Docket-number-only case references — the test is whether the brief relies on a *ruling*:
 - **Label** a decision cited as authority by docket number (slip opinions, unpublished

@@ -1,1 +1,80 @@
 cite_no|pdf_page|raw_text|form|case_name|volume|reporter|page|pincite|paren|refers_to|in_footnote|notes
+1|12|Doe v. Columbia Univ., 831 F.3d 46, 59 (2d Cir. 2016)|full|Doe v. Columbia Univ.|831|F.3d|46|59|2d Cir. 2016||n|
+2|12|Bell Atl. Corp. v. Twombly, 550 U.S. 544, 570 (2007)|full|Bell Atl. Corp. v. Twombly|550|U.S.|544|570|2007||n|
+3|12|Ashcroft v. Iqbal, 556 U.S. 662, 678 (2009)|full|Ashcroft v. Iqbal|556|U.S.|662|678|2009||n|
+4|12|Twombly, 550 U.S. at 555 n.3|short|Twombly|550|U.S.||555 n.3||2|n|
+5|12|Iqbal, 556 U.S. at 678|short|Iqbal|556|U.S.||678||3|n|
+6|13|Soto v. Disney Severance Pay Plan, 26 F.4th 114, 120 (2d Cir. 2022)|full|Soto v. Disney Severance Pay Plan|26|F.4th|114|120|2d Cir. 2022||n|
+7|14|McDonald v. Santa Fe Trail Transp. Co., 427 U.S. 273, 286–87 (1976)|full|McDonald v. Santa Fe Trail Transp. Co.|427|U.S.|273|286–87|1976||n|
+8|14|Domino’s Pizza, Inc. v. McDonald, 546 U.S. 470, 476 (2006)|full|Domino’s Pizza, Inc. v. McDonald|546|U.S.|470|476|2006||n|
+9|15|Lauture v. Int’l Bus. Machines Corp., 216 F.3d 258, 261 (2d Cir. 2000)|full|Lauture v. Int’l Bus. Machines Corp.|216|F.3d|258|261|2d Cir. 2000||n|
+10|15|Id.|id|||||||9|n|
+11|15|Allegheny Coll. v. Nat’l Chautauqua Cnty. Bank of Jamestown, 159 N.E. 173, 176 (N.Y. 1927)|full|Allegheny Coll. v. Nat’l Chautauqua Cnty. Bank of Jamestown|159|N.E.|173|176|N.Y. 1927||n|majority opinion (Cardozo, C.J.)
+12|16|Cityview Partners, LLC v. Mercedes, 2023 WL 1929716, at *2 (E.D.N.Y. Feb. 10, 2023)|full|Cityview Partners, LLC v. Mercedes|2023|WL|1929716|*2|E.D.N.Y. Feb. 10, 2023||n|
+13|16|Allegheny Coll., 159 N.E. at 174|short|Allegheny Coll.|159|N.E.||174||11|n|inside (quoting ...) of row 12
+14|16|Hollander v. Sears, Roebuck & Co., 450 F. Supp. 496 (D. Conn. 1978)|full|Hollander v. Sears, Roebuck & Co.|450|F. Supp.|496||D. Conn. 1978||n|split across pages
+15|17|Id. at 498–99|id|||||498–99||14|n|
+16|17|Id. at 504|id|||||504||14|n|
+17|17|Id. at 504–05|id|||||504–05||14|n|
+18|17|Id. at 505|id|||||505||14|n|
+19|17|id. at 498|id|||||498||14|n|
+20|17|Hollander, 450 F. Supp. at 504|short|Hollander|450|F. Supp.||504||14|n|
+21|18|Adam v. Obama for Am., 210 F. Supp. 3d 979, 986 (N.D. Ill. 2016)|full|Adam v. Obama for Am.|210|F. Supp. 3d|979|986|N.D. Ill. 2016||n|
+22|18|Marvelli v. Chaps Cmty. Health Ctr., 193 F. Supp. 2d 636, 659 (E.D.N.Y. 2002)|full|Marvelli v. Chaps Cmty. Health Ctr.|193|F. Supp. 2d|636|659|E.D.N.Y. 2002||n|
+23|18|Mihalakis v. Cabrini Medical Center (CMC), 151 A.D.2d 345 (1st Dep’t 1989)|full|Mihalakis v. Cabrini Medical Center (CMC)|151|A.D.2d|345||1st Dep’t 1989||n|parenthetical (CMC) inside case name
+24|18|Id. at 345|id|||||345||23|n|pincite = first page
+25|18|Amendola v. A.C. Electric Co., 201 A.D.2d 689 (2d Dep’t 1994)|full|Amendola v. A.C. Electric Co.|201|A.D.2d|689||2d Dep’t 1994||n|
+26|18|Id. at 689|id|||||689||25|n|pincite = first page
+27|18|Overseers of Town of Guilderland v. Overseers of Town of Knox, 5 Cow. 363 (N.Y. Sup. Ct. 1826)|full|Overseers of Town of Guilderland v. Overseers of Town of Knox|5|Cow.|363||N.Y. Sup. Ct. 1826||n|nominative reporter (Cowen)
+28|18|Id. at 363|id|||||363||27|n|pincite = first page
+29|19|Comcast Corp. v. Nat’l Ass’n of Afr. Am.-Owned Media, 589 U.S. 327, 329 (2020)|full|Comcast Corp. v. Nat’l Ass’n of Afr. Am.-Owned Media|589|U.S.|327|329|2020||n|
+30|19|Village of Freeport v. Barrella, 814 F.3d 594, 604 (2d Cir. 2016)|full|Village of Freeport v. Barrella|814|F.3d|594|604|2d Cir. 2016||n|
+31|19|Reynolds v. Barrett, 685 F.3d 193, 201–02 (2d Cir. 2012)|full|Reynolds v. Barrett|685|F.3d|193|201–02|2d Cir. 2012||y|
+32|20|Goldstein v. Pataki, 516 F.3d 50, 58 (2d Cir. 2008)|full|Goldstein v. Pataki|516|F.3d|50|58|2d Cir. 2008||n|
+33|20|Hirsch v. Arthur Andersen & Co., 72 F.3d 1085, 1092 (2d Cir. 1995)|full|Hirsch v. Arthur Andersen & Co.|72|F.3d|1085|1092|2d Cir. 1995||n|
+34|21|Iqbal, 556 U.S. at 678|short|Iqbal|556|U.S.||678||3|y|
+35|22|Roelcke v. Zip Aviation, LLC, 571 F. Supp. 3d 214, 226 n.3 (S.D.N.Y. 2021)|full|Roelcke v. Zip Aviation, LLC|571|F. Supp. 3d|214|226 n.3|S.D.N.Y. 2021||n|
+36|22|United States v. City of New York, 359 F.3d 83, 91–92 (2d Cir. 2004)|full|United States v. City of New York|359|F.3d|83|91–92|2d Cir. 2004||n|
+37|23|Areu v. Fox News Network, LLC, 2021 WL 4124226, at *9 (S.D.N.Y. Sept. 9, 2021)|full|Areu v. Fox News Network, LLC|2021|WL|4124226|*9|S.D.N.Y. Sept. 9, 2021||n|
+38|23|City of New York, 359 F.3d at 91–92|short|City of New York|359|F.3d||91–92||36|n|inside (quoting ...) of row 37
+39|23|City of New York, 359 F.3d at 92|short|City of New York|359|F.3d||92||36|n|
+40|23|York v. Ass’n of Bar of City of N.Y., 286 F.3d 122, 126 (2d Cir. 2002)|full|York v. Ass’n of Bar of City of N.Y.|286|F.3d|122|126|2d Cir. 2002||n|
+41|23|York, 286 F.3d at 126|short|York|286|F.3d||126||40|n|
+42|23|Hughes v. Twenty-First Century Fox, Inc., 304 F. Supp. 3d 429, 442–44 (S.D.N.Y. 2018)|full|Hughes v. Twenty-First Century Fox, Inc.|304|F. Supp. 3d|429|442–44|S.D.N.Y. 2018||n|
+43|23|Glaser v. Upright Citizens Brigade, LLC, 377 F. Supp. 3d 387, 395–96 (S.D.N.Y. 2019)|full|Glaser v. Upright Citizens Brigade, LLC|377|F. Supp. 3d|387|395–96|S.D.N.Y. 2019||n|
+44|23|Pastor v. P’ship for Children’s Rights, 2012 WL 4503415, at *2 (E.D.N.Y. Sept. 27, 2012)|full|Pastor v. P’ship for Children’s Rights|2012|WL|4503415|*2|E.D.N.Y. Sept. 27, 2012||n|
+45|23|538 F. App’x 119 (2d Cir. 2013)|full||538|F. App’x|119||2d Cir. 2013||n|subsequent history (aff'd) of row 44
+46|23|Percy v. Loc. 412 of CSEA, Inc., 2022 WL 704904, at *6 (S.D.N.Y. Mar. 9, 2022)|full|Percy v. Loc. 412 of CSEA, Inc.|2022|WL|704904|*6|S.D.N.Y. Mar. 9, 2022||n|split across pages
+47|24|Hughes, 304 F. Supp. 3d at 444|short|Hughes|304|F. Supp. 3d||444||42|n|
+48|24|Id.|id|||||||42|n|
+49|24|City of New York, 359 F.3d at 92|short|City of New York|359|F.3d||92||36|n|quote has (emphasis added)
+50|24|Areu, 2021 WL 4124226, at *9|short|Areu|2021|WL|4124226|*9||37|n|WL short form
+51|24|Roelcke, 571 F. Supp. 3d at 226|short|Roelcke|571|F. Supp. 3d||226||35|y|quote has (emphasis added)
+52|25|Community for Creative Non-Violence v. Reid, 490 U.S. 730 (1989)|full|Community for Creative Non-Violence v. Reid|490|U.S.|730||1989||n|inside quotation from row 53
+53|25|City of New York, 359 F.3d at 92|short|City of New York|359|F.3d||92||36|n|
+54|25|Hughes, 304 F. Supp. 3d at 442|short|Hughes|304|F. Supp. 3d||442||42|n|
+55|25|Id. at 442–43|id|||||442–43||42|n|
+56|25|City of New York, 359 F.3d at 92|short|City of New York|359|F.3d||92||36|n|inside (quoting ...) of row 55
+57|25|Hirsch, 72 F.3d at 1092|short|Hirsch|72|F.3d||1092||33|n|
+58|26|Hughes, 304 F. Supp. 3d at 443|short|Hughes|304|F. Supp. 3d||443||42|n|
+59|26|Stack v. Karr-Barth Assocs., Inc., 2021 WL 1063389, at *5 (S.D.N.Y. Mar. 18, 2021)|full|Stack v. Karr-Barth Assocs., Inc.|2021|WL|1063389|*5|S.D.N.Y. Mar. 18, 2021||n|
+60|26|Eisenberg v. Advance Relocation & Storage, Inc., 237 F.3d 111, 119 (2d Cir. 2000)|full|Eisenberg v. Advance Relocation & Storage, Inc.|237|F.3d|111|119|2d Cir. 2000||n|
+61|26|Eisenberg, 237 F.3d at 118|short|Eisenberg|237|F.3d||118||60|n|
+62|26|City of New York, 359 F.3d at 92|short|City of New York|359|F.3d||92||36|n|
+63|26|Gaffney v. Dep’t of Info. Tech. & Telecomms., 536 F. Supp. 2d 445, 461 (S.D.N.Y. 2008)|full|Gaffney v. Dep’t of Info. Tech. & Telecomms.|536|F. Supp. 2d|445|461|S.D.N.Y. 2008||n|split across pages
+64|27|Singh v. City of New York, 524 F.3d 361, 367 (2d Cir. 2008)|full|Singh v. City of New York|524|F.3d|361|367|2d Cir. 2008||n|majority opinion (Sotomayor, J.)
+65|27|Glatt v. Fox Searchlight Pictures, Inc., 811 F.3d 528, 534 (2d Cir. 2016)|full|Glatt v. Fox Searchlight Pictures, Inc.|811|F.3d|528|534|2d Cir. 2016||n|
+66|28|Singh, 524 F.3d at 367|short|Singh|524|F.3d||367||64|n|
+67|28|Tenn. Coal, Iron & R.R. Co. v. Muscoda Local No. 123, 321 U.S. 590, 598 (1944)|full|Tenn. Coal, Iron & R.R. Co. v. Muscoda Local No. 123|321|U.S.|590|598|1944||n|inside (quoting ...) of row 66
+68|28|Id.|id|||||||64|n|skips nested Tenn. Coal (row 67)
+69|28|Velarde v. GW GJ, Inc., 914 F.3d 779, 784 (2d Cir. 2019)|full|Velarde v. GW GJ, Inc.|914|F.3d|779|784|2d Cir. 2019||n|
+70|28|Walling v. Portland Terminal Co., 330 U.S. 148, 153 (1947)|full|Walling v. Portland Terminal Co.|330|U.S.|148|153|1947||n|inside (quoting ...) of row 69
+71|28|Lee v. Riverbay Corp., 751 F. Supp. 3d 259, 275 (S.D.N.Y. 2024)|full|Lee v. Riverbay Corp.|751|F. Supp. 3d|259|275|S.D.N.Y. 2024||n|split across pages
+72|29|Id.|id|||||||71|n|
+73|30|Gooden v. Joseph P. Addabbo Fam. Health Ctr., Inc., 2023 WL 2709735, at *4 (E.D.N.Y. Mar. 30, 2023)|full|Gooden v. Joseph P. Addabbo Fam. Health Ctr., Inc.|2023|WL|2709735|*4|E.D.N.Y. Mar. 30, 2023||n|
+74|30|Davis v. Mich. Dep’t of Treas., 489 U.S. 803, 809 (1989)|full|Davis v. Mich. Dep’t of Treas.|489|U.S.|803|809|1989||n|
+75|31|Iqbal, 556 U.S. at 681|short|Iqbal|556|U.S.||681||3|n|
+76|32|Moy v. Napoli Shkolnik, PLLC, 2024 WL 3498131, at *4 n.4 (S.D.N.Y. July 22, 2024)|full|Moy v. Napoli Shkolnik, PLLC|2024|WL|3498131|*4 n.4|S.D.N.Y. July 22, 2024||n|
+77|32|Andrews v. Blick Art Materials, LLC, 268 F. Supp. 3d 381, 398 (E.D.N.Y. 2017)|full|Andrews v. Blick Art Materials, LLC|268|F. Supp. 3d|381|398|E.D.N.Y. 2017||n|
+78|32|Hyman v. Cornell Univ., 834 F. Supp. 2d 77, 84 (N.D.N.Y. 2011)|full|Hyman v. Cornell Univ.|834|F. Supp. 2d|77|84|N.D.N.Y. 2011||n|
+79|32|485 F. App’x 465 (2d Cir. 2012)|full||485|F. App’x|465||2d Cir. 2012||n|subsequent history (aff'd) of row 78
