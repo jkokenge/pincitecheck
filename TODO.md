@@ -39,8 +39,8 @@ public RECAP briefs: precision/recall, plus the citation forms it misses.
 
 - [x] Select 10 public RECAP briefs; record source URLs in a manifest file (`data/manifest/phase1_briefs.yaml`)
 - [x] Fetch script: download manifest PDFs to `data/raw/` and verify sha256 (`scripts/fetch_briefs.py`)
-- [ ] Hand-label ground-truth citations for briefs 1–5 (blind — before building extractors; rules in `data/labels/README.md`)  ← CURRENT
-- [ ] Hand-label ground-truth citations for briefs 6–10
+- [x] Hand-label ground-truth citations for briefs 1–5 (blind — before building extractors; rules in `data/labels/README.md`)
+- [ ] Hand-label ground-truth citations for briefs 6–10  ← CURRENT
 - [ ] Blind re-label of b04 (≥ 1 week after first pass) into `data/labels/relabel/b04.psv`
 - [ ] pydantic models: `Citation` (raw text, volume, reporter, page, pincite, span, proposition)
 - [ ] PDF text extraction (pdfplumber) + tests

@@ -109,6 +109,26 @@ not one nested in its `(quoting …)` / `(citing …)`. In b03, `Consumers’ Rs
 673 (quoting Whitman, 531 U.S. at 475). Id.` → the `Id.` is *Consumers’ Rsch.* `refers_to`
 is the first full cite of that case; `notes` names the skipped citation.
 
+The exception is an `Id.` after a record cite that cites a case: `See Mot. at 12:15–25 (citing
+Puri v. Costco …). There, the court found … Id.` The main citation is the motion, but the
+sentence describes Puri's holding, so the `Id.` points to Puri (b05 #53). If the sentence
+describes two cases at once, no single case fits; label it anyway with `refers_to` set to the
+last one and say so in `notes` (b05 #31).
+
+A short cite or `Id.` that comes **before** the brief's first full cite of the case (b05 cites
+`Williams, 552 F.3d at 938` on page 11 and gives the full cite on page 12): `refers_to` points
+forward to that first full cite, and `notes` says `precedes first full cite`. The checker
+accepts the forward reference only with that note.
+
+A short cite with no full cite anywhere in the brief, usually inside a block quote from
+another opinion (`See Nacarino, 2022 WL 17178688, at *7-8` quoted from Scott): label it
+`short`, leave `refers_to` empty, and write `no full cite in this brief` in `notes`.
+
+A case name in running text with the citation in a later sentence (`In Martinez v. Mead
+Johnson, the plaintiff alleged … 2022 WL 15053334, at *5 (C.D. Cal. Oct. 22, 2022).`):
+label it `full`. `raw_text` is only the citation itself, `case_name` comes from the text, and
+`notes` says `case name in running text, separated from cite`.
+
 When unsure, label it and say why in `notes`. Deciding later is easier than finding it again.
 
 ## Worked example (b04, PDF page 12)
