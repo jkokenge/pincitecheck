@@ -5,8 +5,9 @@ REST API, and MCP server that checks whether cited U.S. cases exist, whether quo
 pincites are accurate, and whether the cited passage supports the brief's proposition.
 It is evaluated on LePhantomCite (Princeton's public legal-hallucination benchmark) plus
 its own reproducible eval sets of full-length clean briefs and real-world-patterned cases, with
-results compared across legal AI systems. It is a portfolio project aimed at legal AI companies (Harvey, StrongSuit,
-Free Law Project), framed as verification assistance for attorneys — not legal advice.
+results compared across legal AI systems. It is a portfolio project and consulting vehicle: aimed at legal AI
+companies (Harvey, StrongSuit, Free Law Project) and at law firms building AI-assisted practices, framed as
+verification assistance for attorneys — not legal advice.
 
 ## Constraints — Non-Negotiable
 
@@ -76,6 +77,11 @@ Free Law Project), framed as verification assistance for attorneys — not legal
 - **Names: GitHub repo `pincitecheck`, domain pincitecheck.com (Route 53); local directory
   stays `citecheck`** — the original "CiteCheck" name collides with LawDroid's CiteCheck AI.
   The mismatch with the local directory is intentional.
+- **Consulting is a parallel goal, not a fallback; FDE at a legal AI company and independent
+  FDE-style consulting are the same work, pitched two ways** — one build serves both. Firm
+  integration goes through a **bring-your-own-sources mode** (check briefs against opinions the
+  firm exports under its own subscription), never a vendor API or web-app automation. Vendor
+  content never enters the repo. Each engagement starts by checking the firm's subscription terms.
 
 ## Open Decisions
 

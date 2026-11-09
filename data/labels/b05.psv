@@ -1,1 +1,96 @@
 cite_no|pdf_page|raw_text|form|case_name|volume|reporter|page|pincite|paren|refers_to|in_footnote|notes
+1|8|Viggiano v. Johnson & Johnson, 2015 WL 12860480, at *1, (C.D. Cal. June 12, 2015)|full|Viggiano v. Johnson & Johnson|2015|WL|12860480|*1|C.D. Cal. June 12, 2015||n|stray comma after pincite
+2|8|Scott v. Saraya USA, Inc., 675 F.Supp.3d 1040 (N.D. Cal. June 23, 2023)|full|Scott v. Saraya USA, Inc.|675|F.Supp.3d|1040||N.D. Cal. June 23, 2023||n|reporter unspaced; full date with reporter cite
+3|8|Grimbaldeston v. Saraya USA, Inc., 2025 WL 3677857 (N.D. Cal. Dec. 17, 2025)|full|Grimbaldeston v. Saraya USA, Inc.|2025|WL|3677857||N.D. Cal. Dec. 17, 2025||n|line break mid-cite (2025 / WL)
+4|10|Conley v. Gibson, 355 U.S. 41, 47 (1957)|full|Conley v. Gibson|355|U.S.|41|47|1957||n|
+5|10|Bell Atl. Corp. v. Twombly, 550 U.S. 544 (2007)|full|Bell Atl. Corp. v. Twombly|550|U.S.|544||2007||n|line break mid-cite (Bell / Atl.)
+6|10|Twombly, 550 U.S. at 556|short|Twombly|550|U.S.||556||5|n|
+7|10|Knievel v. ESPN, 393 F.3d 1068, 1072 (9th Cir. 2005)|full|Knievel v. ESPN|393|F.3d|1068|1072|9th Cir. 2005||n|
+8|10|Twombly, 550 U.S. at 570|short|Twombly|550|U.S.||570||5|n|
+9|10|Ashcroft v. Iqbal, 556 U.S. 662, 697 (2009)|full|Ashcroft v. Iqbal|556|U.S.|662|697|2009||n|line break mid-cite (556 U.S. / 662)
+10|10|Burton v. Time Warner Cable Inc., No. CV 12-06764, 2013 WL 3337784, at *2 (C.D. Cal. Mar. 20, 2013)|full|Burton v. Time Warner Cable Inc.|2013|WL|3337784|*2|C.D. Cal. Mar. 20, 2013||n|line break mid-cite (2013 / WL)
+11|10|Starr v. Baca, 652 F.3d 1202, 1216 (9th Cir. 2011)|full|Starr v. Baca|652|F.3d|1202|1216|9th Cir. 2011||n|in quoting parenthetical of row 10; line break mid-cite (1202, / 1216)
+12|11|Sagan v. Apple Computer, Inc., 874 F. Supp. 1072, 1077 (C.D. Cal. 1994)|full|Sagan v. Apple Computer, Inc.|874|F. Supp.|1072|1077|C.D. Cal. 1994||n|line break mid-cite (1072, / 1077)
+13|11|Williams, 552 F.3d at 938|short|Williams|552|F.3d||938||20|n|short cite precedes first full cite (p.12)
+14|11|Id.|id|||||||20|n|Id. to Williams short cite (row 13), which precedes first full cite
+15|11|Yumul v. Smart Balance, Inc., 733 F. Supp. 2d 1117, 1129 (C.D. Cal. 2010)|full|Yumul v. Smart Balance, Inc.|733|F. Supp. 2d|1117|1129|C.D. Cal. 2010||n|line break mid-cite (C.D. Cal. / 2010)
+16|11|Williams, 552 F.3d at 938|short|Williams|552|F.3d||938||20|n|short cite precedes first full cite (p.12)
+17|12|Viggiano v. Johnson & Johnson, 2015 WL 12860480, at *3-4 (C.D. Cal. June 12, 2015)|full|Viggiano v. Johnson & Johnson|2015|WL|12860480|*3-4|C.D. Cal. June 12, 2015||n|repeats full cite #1; line break mid-cite (v. / Johnson)
+18|12|Scott v. Saraya USA, Inc., 675 F.Supp.3d 1040, 1047 (N.D. Cal. June 23, 2023)|full|Scott v. Saraya USA, Inc.|675|F.Supp.3d|1040|1047|N.D. Cal. June 23, 2023||n|repeats full cite #2; line break mid-cite (Inc., / 675)
+19|12|Grimbaldeston v. Saraya USA, Inc., 2025 WL 3677857, at *3 (N.D. Cal. Dec. 17, 2025)|full|Grimbaldeston v. Saraya USA, Inc.|2025|WL|3677857|*3|N.D. Cal. Dec. 17, 2025||n|repeats full cite #3; line break mid-cite (Cal. / Dec.)
+20|12|Williams v. Gerber Prods. Co., 552 F.3d 934, 939-40 (9th Cir. 2008)|full|Williams v. Gerber Prods. Co.|552|F.3d|934|939-40|9th Cir. 2008||n|first full cite; short cites #13, #16 and Id. #14 precede it
+21|13|Viggiano, 2015 WL 12860480, at *3-4|short|Viggiano|2015|WL|12860480|*3-4||1|n|WL short form
+22|13|Scott, 675 F.Supp.3d at 1046-47|short|Scott|675|F.Supp.3d||1046-47||2|n|
+23|13|Grimbaldeston, 2025 WL 3677857, at *3|short|Grimbaldeston|2025|WL|3677857|*3||3|n|WL short form
+24|13|Williams v. Gerber Prods. Co., 552 F.3d 934, 938 (9th Cir. 2008)|full|Williams v. Gerber Prods. Co.|552|F.3d|934|938|9th Cir. 2008||n|repeats full cite #20; line break mid-cite (v. / Gerber)
+25|13|2022 WL 15053334, at *5 (C.D. Cal. Oct. 22, 2022)|full|Martinez v. Mead Johnson|2022|WL|15053334|*5|C.D. Cal. Oct. 22, 2022||n|case name in running text, separated from cite; line break mid-cite (2022 / WL)
+26|13|Id., *6|id|||||*6||25|n|nonstandard pincite form (no "at")
+27|14|Grimbaldeston, 2025 WL 3677857, at *3|short|Grimbaldeston|2025|WL|3677857|*3||3|n|WL short form; line break mid-cite (3677857, / at)
+28|14|Schleyer v. Starbucks Corp., No. 22-CV-10932 (JPO), 2023 WL 5935695, at *5 (S.D.N.Y. Sept. 12, 2023)|full|Schleyer v. Starbucks Corp.|2023|WL|5935695|*5|S.D.N.Y. Sept. 12, 2023||n|line break mid-cite (JPO), / 2023)
+29|14|Henderson v. Gruma Corp., 2011 WL 1362188, at *12 (C.D. Cal. Apr. 11, 2011)|full|Henderson v. Gruma Corp.|2011|WL|1362188|*12|C.D. Cal. Apr. 11, 2011||n|in "citing" clause after record cite; line break mid-cite (Apr. 11, / 2011)
+30|14|Daniels v. Eagle Fam. Foods Grp., LLC, 797 F. Supp. 3d 1154, 1166 (E.D. Cal. 2025)|full|Daniels v. Eagle Fam. Foods Grp., LLC|797|F. Supp. 3d|1154|1166|E.D. Cal. 2025||n|in "citing" clause after record cite; line break mid-cite (1166 / (E.D.)
+31|14|id.|id|||||||30|n|ambiguous: may point to the Motion (record cite) or to Henderson #29 / Daniels #30; sentence describes both
+32|14|Henderson, 2011 WL 1362188, at *12|short|Henderson|2011|WL|1362188|*12||29|n|WL short form; line break mid-cite (Henderson, / 2011)
+33|15|Moore v. Trader Joe’s Co., 4 F.4th 874, 886 (9th Cir. 2021)|full|Moore v. Trader Joe’s Co.|4|F.4th|874|886|9th Cir. 2021||n|in citing parenthetical of record cite; line break mid-cite (886 / (9th)
+34|15|Grimbaldeston, 2025 WL 3677857, at *3|short|Grimbaldeston|2025|WL|3677857|*3||3|n|WL short form
+35|16|Williams v. Gerber Prods. Co., 552 F.3d 934, 939-40 (9th Cir. 2008)|full|Williams v. Gerber Prods. Co.|552|F.3d|934|939-40|9th Cir. 2008||n|repeats full cite #20; line break mid-cite (Cir. / 2008)
+36|16|Whiteside v. Kimberly Clark Corp., 108 F.4th 771, 778 (9th Cir. July 17, 2024)|full|Whiteside v. Kimberly Clark Corp.|108|F.4th|771|778|9th Cir. July 17, 2024||n|full date with reporter cite; line break mid-cite (Cir. / July)
+37|16|Viggiano, 2015 WL 12860480, at *4|short|Viggiano|2015|WL|12860480|*4||1|n|WL short form; line break mid-cite (2015 / WL)
+38|16|Williams, 552 F.3d at 939|short|Williams|552|F.3d||939||20|n|in "citing" clause after row 37's parenthetical
+39|16|Scott, 675 F.Supp.3d at 1047-48|short|Scott|675|F.Supp.3d||1047-48||2|n|line break mid-cite (1047- / 48)
+40|16|Grimbaldeston, 2025 WL 3677857, at *3|short|Grimbaldeston|2025|WL|3677857|*3||3|n|WL short form
+41|16|Workman v. Plum Inc., 141 F.Supp.3d 1032, 1036 (N.D. Cal. 2015)|full|Workman v. Plum Inc.|141|F.Supp.3d|1032|1036|N.D. Cal. 2015||n|split across pages
+42|17|Krommenhock v. Post Foods, LLC, 255 F. Supp. 3d 938, 964 (N.D. Cal. 2017)|full|Krommenhock v. Post Foods, LLC|255|F. Supp. 3d|938|964|N.D. Cal. 2017||n|line break mid-cite (Cal. / 2017)
+43|17|Williams, 552 F.3d at 939|short|Williams|552|F.3d||939||20|n|
+44|17|Williams, 552 F.3d at 939-40|short|Williams|552|F.3d||939-40||20|n|line break mid-cite (552 / F.3d)
+45|17|Whiteside, 108 F.4th at 778|short|Whiteside|108|F.4th||778||36|n|
+46|17|Brady v. Bayer Corp., 26 Cal.App.5th 1156, 1172 (2018)|full|Brady v. Bayer Corp.|26|Cal.App.5th|1156|1172|2018||n|reporter unspaced; line break mid-cite (26 / Cal.App.5th)
+47|18|Williams, 552 F.3d at 938|short|Williams|552|F.3d||938||20|n|
+48|18|Davis v. HSBC Bank Nevada, N.A., 691 F.3d 1152, 1162 (9th Cir. 2012)|full|Davis v. HSBC Bank Nevada, N.A.|691|F.3d|1152|1162|9th Cir. 2012||n|line break mid-cite (HSBC / Bank)
+49|18|Lilly v. ConAgra Foods, Inc., 743 F.3d 662, 665 (9th Cir. 2014)|full|Lilly v. ConAgra Foods, Inc.|743|F.3d|662|665|9th Cir. 2014||n|line break mid-cite (Foods, / Inc.)
+50|18|Grimbaldeston, 2025 WL 3677857, at *3|short|Grimbaldeston|2025|WL|3677857|*3||3|n|WL short form
+51|18|Williams, 552 F.3d at 938|short|Williams|552|F.3d||938||20|n|line break mid-cite (552 F.3d / at)
+52|18|Puri v. Costco Wholesale Corp., No. 5:21-CV-01202-EJD, 2021 WL 6000078, at *7 (N.D. Cal. Dec. 20, 2021)|full|Puri v. Costco Wholesale Corp.|2021|WL|6000078|*7|N.D. Cal. Dec. 20, 2021||n|in citing parenthetical of record cite; split across pages; line break mid-cite (Puri / v.)
+53|19|Id.|id|||||||52|n|follows record cite with nested Puri (#52); points to Puri because the sentence describes Puri's holding; ambiguous under nesting rule
+54|19|Id., at *4|id|||||*4||52|n|nonstandard comma before "at"
+55|20|Cimoli v. Alacer Corp., 546 F. Supp. 3d 897 (N.D. Cal. 2021)|full|Cimoli v. Alacer Corp.|546|F. Supp. 3d|897||N.D. Cal. 2021||n|in block quote of Scott; line break mid-cite (N.D. / Cal.)
+56|20|Nacarino, 2022 WL 17178688, at *7-8|short|Nacarino|2022|WL|17178688|*7-8|||n|in block quote of Scott; WL short form; no full cite in this brief (full cite is in the quoted opinion)
+57|20|Cimoli, 546 F. Supp. 3d at 904-07|short|Cimoli|546|F. Supp. 3d||904-07||55|n|in block quote of Scott; line break inside reporter (F. / Supp. 3d)
+58|20|Zeiger, 304 F. Supp. 3d at 853|short|Zeiger|304|F. Supp. 3d||853|||n|in block quote of Scott; no full cite in this brief (full cite is in the quoted opinion)
+59|20|Scott, 675 F. Supp. 3d at 1050|short|Scott|675|F. Supp. 3d||1050||2|n|reporter spaced here, unspaced in full cite #2
+60|20|Grimbaldeston, 2025 WL 3677857, at *4|short|Grimbaldeston|2025|WL|3677857|*4||3|n|WL short form
+61|20|Hadley v. Kellogg Sales Co., 273 F. Supp. 3d 1052, 1095 (N.D. Cal. 2017)|full|Hadley v. Kellogg Sales Co.|273|F. Supp. 3d|1052|1095|N.D. Cal. 2017||n|line break mid-cite (1052, / 1095)
+62|21|Grimbaldeston, 2025 WL 3677857, at *4|short|Grimbaldeston|2025|WL|3677857|*4||3|n|WL short form
+63|21|Andrade-Heymsfield v. NextFoods, Inc., 2023 WL 2576770, at *4 (S.D. Cal. Mar. 20, 2023)|full|Andrade-Heymsfield v. NextFoods, Inc.|2023|WL|2576770|*4|S.D. Cal. Mar. 20, 2023||n|line break mid-cite (NextFoods, / Inc.)
+64|21|In re Ferrero Litigation, 794 F. Supp. 2d 1107, 1118 (S.D. Cal. 2011)|full|In re Ferrero Litigation|794|F. Supp. 2d|1107|1118|S.D. Cal. 2011||n|line break mid-cite (In re / Ferrero)
+65|21|Sims v. Campbell Soup Co., No. EDCV18668PSGSPX, 2018 WL 7568640, at *9 (C.D. Cal. Sept. 24, 2018)|full|Sims v. Campbell Soup Co.|2018|WL|7568640|*9|C.D. Cal. Sept. 24, 2018||n|docket no. printed without hyphens; line break mid-cite (Campbell / Soup; Sept. 24, / 2018)
+66|21|Allred v. Kellogg Co., No. 17-cv-1354-AJB-BLMx, 2018 WL 1158885, at *5 (S.D. Cal. Feb. 23, 2018)|full|Allred v. Kellogg Co.|2018|WL|1158885|*5|S.D. Cal. Feb. 23, 2018||n|line break mid-cite (Co., / No.)
+67|22|Ashton v. J.M. Smucker Co., 2020 WL 8575140, at *12 (C.D. Cal. Dec. 16, 2020)|full|Ashton v. J.M. Smucker Co.|2020|WL|8575140|*12|C.D. Cal. Dec. 16, 2020||n|line break mid-cite (J.M. / Smucker)
+68|22|Kulp v. Munchkin, Inc., 678 F. Supp. 3d 1158, 1167 (C.D. Cal. June 21, 2023)|full|Kulp v. Munchkin, Inc.|678|F. Supp. 3d|1158|1167|C.D. Cal. June 21, 2023||n|full date with reporter cite; line break inside reporter (F. Supp. / 3d)
+69|22|Cartwright v. Viking Industries, Inc., 249 F.R.D. 351, 356 (E.D. Cal. 2008)|full|Cartwright v. Viking Industries, Inc.|249|F.R.D.|351|356|E.D. Cal. 2008||n|line break mid-cite (Cartwright / v.)
+70|22|Ashton, 2020 WL 8575140, at *12|short|Ashton|2020|WL|8575140|*12||67|n|WL short form
+71|22|Cabrera v. Bayer Healthcare, LLC, No. LACV1708525JAKJPRX, 2019 WL 1146828, at *1 (C.D. Cal. Mar. 6, 2019)|full|Cabrera v. Bayer Healthcare, LLC|2019|WL|1146828|*1|C.D. Cal. Mar. 6, 2019||n|in citing parenthetical of row 70; docket no. printed without hyphens; line break mid-cite (2019 WL / 1146828)
+72|22|Collyer v. Catalina Snacks Inc., 712 F. Supp. 3d 1276, 1288 (N.D. Cal. 2024)|full|Collyer v. Catalina Snacks Inc.|712|F. Supp. 3d|1276|1288|N.D. Cal. 2024||y|in "citing" clause after record cite
+73|22|Rodriguez v. Natures Path Foods, Inc., No. 2:25-CV-01735-SPG-E, 2025 WL 3691807, at *10 (C.D. Cal. Sept. 23, 2025)|full|Rodriguez v. Natures Path Foods, Inc.|2025|WL|3691807|*10|C.D. Cal. Sept. 23, 2025||y|line break mid-cite (2025 / WL)
+74|23|Mexicali Rose v. Super. Ct., 1 Cal. 4th 617, 621 (1992)|full|Mexicali Rose v. Super. Ct.|1|Cal. 4th|617|621|1992||n|signal (see / also) split across pages, cite itself on p.23
+75|23|Windham at Carmel Mtn. Ranch Assn. v. Super. Ct., 109 Cal.App.4th 1162, 1169 (2003)|full|Windham at Carmel Mtn. Ranch Assn. v. Super. Ct.|109|Cal.App.4th|1162|1169|2003||n|" at " inside case name; reporter unspaced; line break mid-cite (Ranch / Assn.)
+76|23|Bitton v. Gencor Nutrientes, Inc., 654 Fed.Appx. 358, 363 (9th Cir. 2016)|full|Bitton v. Gencor Nutrientes, Inc.|654|Fed.Appx.|358|363|9th Cir. 2016||n|reporter unspaced; line break mid-cite (v. / Gencor)
+77|23|Musgrave v. Taylor Farms Pac., Inc., No. 18-CV-02841-JSW, 2019 WL 8230850, at *4 (N.D. Cal. 2019)|full|Musgrave v. Taylor Farms Pac., Inc.|2019|WL|8230850|*4|N.D. Cal. 2019||n|WL cite with year only, no full date; line break mid-cite (Farms / Pac.)
+78|23|Gottsdanker v. Cutter Laboratories, 182 Cal.App.2d 602, 607 (1960)|full|Gottsdanker v. Cutter Laboratories|182|Cal.App.2d|602|607|1960||n|reporter unspaced
+79|23|Gonzalez v. Drew Indus. Inc., 750 F. Supp. 2d 1061, 1072–73 (C.D. Cal. 2007)|full|Gonzalez v. Drew Indus. Inc.|750|F. Supp. 2d|1061|1072–73|C.D. Cal. 2007||n|en dash in pincite; line break mid-cite (C.D. / Cal.)
+80|24|Swingless Golf Club Corp. v. Taylor, 679 F. Supp. 2d 1060, 1067 (N.D. Cal. 2009)|full|Swingless Golf Club Corp. v. Taylor|679|F. Supp. 2d|1060|1067|N.D. Cal. 2009||n|line break mid-cite (Taylor, / 679)
+81|24|Cisco Systems, Inc. v. STMicroelectronics, Inc., 77 F.Supp.3d 887, 898 (N.D. Cal. 2014)|full|Cisco Systems, Inc. v. STMicroelectronics, Inc.|77|F.Supp.3d|887|898|N.D. Cal. 2014||n|split across pages (v. / STMicroelectronics); reporter unspaced
+82|25|DiGiacinto v. RB Health (US) LLC, 668 F.Supp.3d 950, 968 (N.D. Cal. 2023)|full|DiGiacinto v. RB Health (US) LLC|668|F.Supp.3d|950|968|N.D. Cal. 2023||n|parenthetical inside case name; reporter unspaced; line break mid-cite (v. / RB)
+83|25|Aberdeen v. Toyota Motor Sales, U.S.A., No. CV 08-1690, 2008 WL 11336173, at *9 (C.D. Cal. 2007)|full|Aberdeen v. Toyota Motor Sales, U.S.A.|2008|WL|11336173|*9|C.D. Cal. 2007||n|WL cite with year only; WL year 2008 vs paren 2007; line break mid-cite (Motor / Sales)
+84|25|Scott, 675 F.Supp.3d at 1051|short|Scott|675|F.Supp.3d||1051||2|n|
+85|25|Astiana v. Hain Celestial Group, Inc., 783 F.3d 753, 762 (9th Cir. 2015)|full|Astiana v. Hain Celestial Group, Inc.|783|F.3d|753|762|9th Cir. 2015||n|line break mid-cite (v. / Hain)
+86|25|ESG Cap. Partners, LP v. Stratos, 828 F.3d 1023, 1038 (9th Cir. 2016)|full|ESG Cap. Partners, LP v. Stratos|828|F.3d|1023|1038|9th Cir. 2016||n|line break mid-cite (ESG Cap. / Partners)
+87|25|Astiana, 783 F.3d at 762–63|short|Astiana|783|F.3d||762–63||85|n|en dash in pincite
+88|26|Grimbaldeston, 2025 WL 3677857, at *4|short|Grimbaldeston|2025|WL|3677857|*4||3|n|WL short form
+89|26|M. H. v. Done Glob. Inc., No. 24-cv-03040-RFL, 2025 WL 629613, at *3 (N.D. Cal. Feb. 26, 2025)|full|M. H. v. Done Glob. Inc.|2025|WL|629613|*3|N.D. Cal. Feb. 26, 2025||n|in "citing" clause after row 88's parenthetical; initials as party name; line break mid-cite (2025 WL / 629613)
+90|26|Greene v. Harley-Davidson, Inc., 965 F.3d 767, 775 (9th Cir. 2020)|full|Greene v. Harley-Davidson, Inc.|965|F.3d|767|775|9th Cir. 2020||n|line break mid-cite (Inc., / 965)
+91|26|Sebastian v. Kimberly-Clark Corp., No. 17CV442-WQH-JMA, 2017 WL 6497675, at *10 (S.D. Cal. Dec. 18, 2017)|full|Sebastian v. Kimberly-Clark Corp.|2017|WL|6497675|*10|S.D. Cal. Dec. 18, 2017||n|line break mid-cite (6497675, / at)
+92|26|Davidson v. Kimberly-Clark Corporation, 889 F.3d 956, 969 (9th Cir. May. 9, 2018)|full|Davidson v. Kimberly-Clark Corporation|889|F.3d|956|969|9th Cir. May. 9, 2018||n|full date with reporter cite; stray period in "May."; followed by short-name definition ("Davidson")
+93|26|Davidson, 889 F.3d at 969–70|short|Davidson|889|F.3d||969–70||92|n|en dash in pincite
+94|27|Davidson, 889 F.3d at 970|short|Davidson|889|F.3d||970||92|n|
+95|27|Eminence Capital, LLC v. Aspeon, Inc., 316 F.3d 1048, 1052 (9th Cir. 2003)|full|Eminence Capital, LLC v. Aspeon, Inc.|316|F.3d|1048|1052|9th Cir. 2003||n|line break mid-cite (1048, / 1052)

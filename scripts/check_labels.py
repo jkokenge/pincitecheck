@@ -8,7 +8,9 @@ Runs two kinds of checks on data/labels/<id>.psv (rules in data/labels/README.md
 1. Structure: 13 fields per row, sequential cite_no, no unfilled ## placeholders, valid
    form / in_footnote values, pdf_page within the brief's body pages, full cites have
    volume/reporter/page, and every short / id / supra row's refers_to points to an earlier
-   full citation (short cites must also match its volume and reporter).
+   full citation (short cites must also match its volume and reporter). Two exceptions,
+   marked in notes: "precedes first full cite" allows a later full citation, and "no full
+   cite in this brief" allows an empty refers_to (a short cite quoted from another opinion).
 2. Search pass: scans the PDF's body pages for reporter citations ("517 F.2d 188",
    "517 F.2d at 192"), Id., and supra, and flags any page where the PDF has more than
    the sheet does. Flags are prompts to look, not verdicts: an Id. pointing to the
@@ -51,6 +53,10 @@ REPORTER_CITE = re.compile(rf"\b(\d{{1,4}})\s+{REPORTER}\s+(?:at\s+)?[\d*]")
 ID_CITE = re.compile(r"\b[Ii]d\.(?=[\s,]|$)")
 SUPRA = re.compile(r"\bsupra\b")
 
+# Notes that excuse a refers_to from pointing to an earlier full citation (see README).
+FORWARD_REFERENCE_NOTE = "precedes first full cite"
+NO_FULL_CITE_NOTE = "no full cite in this brief"
+
 
 def squash(text: str) -> str:
     """Remove all whitespace, so "So. 2d" and "So.2d" compare equal."""
@@ -86,10 +92,11 @@ def load_rows(brief_id: str) -> tuple[list[dict], list[str]]:
 
 def check_structure(rows: list[dict], first_page: int, last_page: int) -> list[str]:
     problems = []
-    rows_by_cite_no = {}
+    all_rows_by_cite_no = {row["cite_no"]: row for row in rows}
+    earlier_rows_by_cite_no = {}
     for expected_cite_no, row in enumerate(rows, start=1):
         where = f"line {row['_line']} (cite {row['cite_no']})"
-        rows_by_cite_no[row["cite_no"]] = row
+        earlier_rows_by_cite_no[row["cite_no"]] = row
 
         if any("##" in str(value) for value in row.values()):
             problems.append(f"{where}: unfilled ## placeholder")
@@ -108,7 +115,9 @@ def check_structure(rows: list[dict], first_page: int, last_page: int) -> list[s
         if row["form"] == "full":
             problems.extend(check_full_row(row, where))
         else:
-            problems.extend(check_reference_row(row, where, rows_by_cite_no))
+            problems.extend(
+                check_reference_row(row, where, earlier_rows_by_cite_no, all_rows_by_cite_no)
+            )
     return problems
 
 
@@ -129,9 +138,21 @@ def check_full_row(row: dict, where: str) -> list[str]:
     return problems
 
 
-def check_reference_row(row: dict, where: str, rows_by_cite_no: dict) -> list[str]:
-    """Short, id, and supra rows must point back to an earlier full citation."""
-    target = rows_by_cite_no.get(row["refers_to"])
+def check_reference_row(
+    row: dict, where: str, earlier_rows_by_cite_no: dict, all_rows_by_cite_no: dict
+) -> list[str]:
+    """Short, id, and supra rows must point back to an earlier full citation.
+
+    Exceptions, marked in notes: a reference that precedes the brief's first full cite of
+    the case may point forward to it, and a short cite quoted from another opinion may have
+    no full cite in this brief at all.
+    """
+    if not row["refers_to"] and NO_FULL_CITE_NOTE in row["notes"]:
+        return []
+    if FORWARD_REFERENCE_NOTE in row["notes"]:
+        target = all_rows_by_cite_no.get(row["refers_to"])
+    else:
+        target = earlier_rows_by_cite_no.get(row["refers_to"])
     if target is None or target is row:
         return [f"{where}: refers_to {row['refers_to']!r} is not an earlier cite_no"]
     if target["form"] != "full":

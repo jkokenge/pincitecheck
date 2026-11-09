@@ -133,6 +133,7 @@ Make PinciteCheck callable by any service or agent.
 - [ ] Test the MCP server from Claude Desktop; record a demo clip
 - [ ] Self-check demo: ask an agent (Claude Desktop / Claude Code / Cursor) to draft a short brief section; it calls `verify_citations` on its own draft and fixes or flags bad cites before handing it over — the live demo for AI groups
 - [ ] ADR 0003: MCP tool design — differentiate from existing CourtListener MCP servers (see `docs/notes/landscape.md`); lead with tier 2
+- [ ] Bring-your-own-sources mode: verify against a local folder of the firm's exported opinions instead of CourtListener; runtime only, nothing kept; docs tell firms to check their subscription terms first
 
 ---
 
@@ -270,6 +271,8 @@ talk track — plus company pitches, demo video, and blog post ready to send.
 - [ ] One-page pitch: StrongSuit
 - [ ] One-page pitch: Free Law Project
 - [ ] Research + pitch other target companies
+- [ ] Firm-facing consulting pitch: one page for small/mid firms (problem → what I'd do → bring-your-own-sources demo)
+- [ ] Consulting readiness: business entity, professional liability insurance, engagement letter template
 
 ---
 
@@ -277,3 +280,21 @@ talk track — plus company pitches, demo video, and blog post ready to send.
 
 - [ ] Webhook-driven re-verification
 - [ ] Negative-treatment detection via citation graph + LLM classification
+
+---
+
+## Track — Platform Exploration (parallel; doesn't block phases)
+
+Hands-on fluency with the platforms firms use, for consulting and FDE pitches.
+Hands-on notes stay private (vendor terms); only public facts go in `docs/notes/landscape.md`.
+Test inputs: public RECAP briefs from `data/labels` only.
+
+**Deliverable:** A private one-page profile per platform (what it does, how firms deploy it,
+how it exports and integrates, how it checks citations, pricing and access), and a
+"which tool for which firm" summary for consulting conversations.
+
+- [ ] StrongSuit: profile from existing account; run b01 through its cite check, note what it catches vs. labels
+- [ ] Claude for Legal: Cite check artifact + connectors; same b01 run
+- [ ] List remaining platforms and how to get access (trial, demo, enterprise-only): CoCounsel/Westlaw, Lexis+ AI, Bloomberg Law, Clearbrief, vLex, Harvey
+- [ ] One profile per accessible platform (one task each, added once access is known)
+- [ ] "Which tool for which firm" summary
