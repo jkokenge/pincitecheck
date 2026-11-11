@@ -1,1 +1,95 @@
 cite_no|pdf_page|raw_text|form|case_name|volume|reporter|page|pincite|paren|refers_to|in_footnote|notes
+1|6|Phillips v. AWH Corp., 415 F.3d 1303, 1323 (Fed. Cir. 2005) (en banc)|full|Phillips v. AWH Corp.|415|F.3d|1303|1323|Fed. Cir. 2005 (en banc)||n|line break mid-name
+2|6|GE Lighting Sols., LLC v. AgiLight, Inc., 750 F.3d 1304, 1309 (Fed. Cir. 2014)|full|GE Lighting Sols., LLC v. AgiLight, Inc.|750|F.3d|1304|1309|Fed. Cir. 2014||n|
+3|6|Markman v. Westview Instruments, Inc., 517 U.S. 370, 372 (1996)|full|Markman v. Westview Instruments, Inc.|517|U.S.|370|372|1996||n|hyphenated line break mid-name (Mark-man)
+4|7|Phillips, 415 F.3d at 1312–13|short|Phillips|415|F.3d||1312–13||1|n|
+5|7|Id.|id|||||||1|n|
+6|7|Markman v. Westview Instruments, Inc., 52 F.3d 967, 979 (Fed. Cir. 1995)|full|Markman v. Westview Instruments, Inc.|52|F.3d|967|979|Fed. Cir. 1995||n|line break mid-name; different decision from row 3 (Fed. Cir. en banc, below)
+7|7|Phillips, 415 F.3d at 1317|short|Phillips|415|F.3d||1317||1|n|
+8|7|Focus Prods. Grp. Int’l, LLC v. Kartri Sales Co., 156 F.4th 1259, 1273 (Fed. Cir. 2025)|full|Focus Prods. Grp. Int’l, LLC v. Kartri Sales Co.|156|F.4th|1259|1273|Fed. Cir. 2025||n|line break mid-cite (1273 / (Fed. Cir.)
+9|7|Proxense, LLC v. Microsoft Corp., No. W-23-CV-00319-ADA, 2024 WL 2703020, at *1 (W.D. Tex. May 24, 2024)|full|Proxense, LLC v. Microsoft Corp.|2024|WL|2703020|*1|W.D. Tex. May 24, 2024||n|line break mid-name
+10|7|Thorner v. Sony Comput. Ent. Am. LLC, 669 F.3d 1362, 1365 (Fed. Cir. 2012)|full|Thorner v. Sony Comput. Ent. Am. LLC|669|F.3d|1362|1365|Fed. Cir. 2012||n|line break mid-cite (1365 / (Fed. Cir.)
+11|7|ThroughPuter, Inc. v. Amazon Web Servs., Inc., No. 1:22-CV-1095-DAE, 2025 WL 2946606, at *2–3 (W.D. Tex. Sept. 9, 2025)|full|ThroughPuter, Inc. v. Amazon Web Servs., Inc.|2025|WL|2946606|*2–3|W.D. Tex. Sept. 9, 2025||n|line break mid-docket (1095- / DAE); hyphen is real
+12|7|Polaris PowerLED Techs., LLC v. Dell Techs., Inc., No. 1:22-CV-973-RP, 2025 WL 2525457, at *2 (W.D. Tex. Mar. 10, 2025)|full|Polaris PowerLED Techs., LLC v. Dell Techs., Inc.|2025|WL|2525457|*2|W.D. Tex. Mar. 10, 2025||n|line breaks mid-name and mid-date
+13|7|Proxense, 2024 WL 2703020, at *1|short|Proxense|2024|WL|2703020|*1||9|n|WL short form
+14|7|GE Lighting, 750 F.3d at 1309|short|GE Lighting|750|F.3d||1309||2|n|
+15|7|Thorner, 669 F.3d at 1365|short|Thorner|669|F.3d||1365||10|n|
+16|8|Id. at 1366|id|||||1366||10|n|
+17|8|Id.|id|||||||10|n|
+18|8|Id.|id|||||||10|n|
+19|8|Id.|id|||||||10|n|
+20|8|3M Innovative Props. Co. v. Tredegar Corp., 725 F.3d 1315, 1326 (Fed. Cir. 2013)|full|3M Innovative Props. Co. v. Tredegar Corp.|725|F.3d|1315|1326|Fed. Cir. 2013||n|line break mid-cite (1315, / 1326)
+21|8|Phillips, 415 F.3d at 1317|short|Phillips|415|F.3d||1317||1|n|
+22|8|id. at 1317–24|id|||||1317–24||1|n|
+23|8|Id. at 1324|id|||||1324||1|n|
+24|8|Nautilus, Inc. v. Biosig Instruments, Inc., 572 U.S. 898, 910 (2014)|full|Nautilus, Inc. v. Biosig Instruments, Inc.|572|U.S.|898|910|2014||n|line break mid-cite (910 / (2014))
+25|8|Sonix Tech. Co. v. Publ’ns Int’l, Ltd., 844 F.3d 1370, 1377 (Fed. Cir. 2017)|full|Sonix Tech. Co. v. Publ’ns Int’l, Ltd.|844|F.3d|1370|1377|Fed. Cir. 2017||n|
+26|9|GE Lighting, 750 F.3d at 1309|short|GE Lighting|750|F.3d||1309||2|n|
+27|9|Thorner, 669 F.3d at 1365|short|Thorner|669|F.3d||1365||10|n|inside (citing ...) of row 26
+28|9|Thorner, 669 F.3d at 1366|short|Thorner|669|F.3d||1366||10|n|line break mid-cite (F.3d / at)
+29|10|Broadcom Corp. v. ITC, 28 F.4th 240, 252 (Fed. Cir. 2022)|full|Broadcom Corp. v. ITC|28|F.4th|240|252|Fed. Cir. 2022||n|
+30|10|The Chamberlain Grp., Inc. v. Techtronic Indus. Co., 676 F. App’x 980, 985 (Fed. Cir. 2017)|full|The Chamberlain Grp., Inc. v. Techtronic Indus. Co.|676|F. App’x|980|985|Fed. Cir. 2017||n|line break mid-cite (Co., / 676)
+31|10|Intell. Ventures I LLC v. Altera Corp., No. 10-1065-LPS, 2013 WL 3913646, at *8–9 (D. Del. July 26, 2013)|full|Intell. Ventures I LLC v. Altera Corp.|2013|WL|3913646|*8–9|D. Del. July 26, 2013||n|line break mid-cite (at / *8–9)
+32|11|Thorner, 669 F.3d at 1365–66|short|Thorner|669|F.3d||1365–66||10|n|
+33|11|i4i Ltd. P’ship v. Microsoft Corp., 598 F.3d 831, 843–44 (Fed. Cir. 2010)|full|i4i Ltd. P’ship v. Microsoft Corp.|598|F.3d|831|843–44|Fed. Cir. 2010||n|line break mid-cite (598 F.3d / 831)
+34|11|Vitronics Corp. v. Conceptronic, Inc., 90 F.3d 1576, 1583 (Fed. Cir. 1996)|full|Vitronics Corp. v. Conceptronic, Inc.|90|F.3d|1576|1583|Fed. Cir. 1996||n|
+35|11|Phillips, 415 F.3d at 1318|short|Phillips|415|F.3d||1318||1|n|
+36|12|Amgen Inc. v. Hoechst Marion Roussel, Inc., 314 F.3d 1313, 1326 (Fed. Cir. 2003)|full|Amgen Inc. v. Hoechst Marion Roussel, Inc.|314|F.3d|1313|1326|Fed. Cir. 2003||n|line break mid-name
+37|12|Caterpillar Tractor Co. v. Berco, S.p.A., 714 F.2d 1110, 1116 (Fed. Cir. 1983)|full|Caterpillar Tractor Co. v. Berco, S.p.A.|714|F.2d|1110|1116|Fed. Cir. 1983||n|line break mid-name
+38|12|Curtiss-Wright Flow Control Corp. v. Velan, Inc., 438 F.3d 1374, 1380–81 (Fed. Cir. 2006)|full|Curtiss-Wright Flow Control Corp. v. Velan, Inc.|438|F.3d|1374|1380–81|Fed. Cir. 2006||n|line break mid-name
+39|12|Seachange Int’l, Inc. v. C-COR, Inc., 413 F.3d 1361, 1369 (Fed. Cir. 2005)|full|Seachange Int’l, Inc. v. C-COR, Inc.|413|F.3d|1361|1369|Fed. Cir. 2005||n|split across pages (413 / F.3d)
+40|13|Ancora Techs., Inc. v. Apple, Inc., 744 F.3d 732, 735 (Fed. Cir. 2014)|full|Ancora Techs., Inc. v. Apple, Inc.|744|F.3d|732|735|Fed. Cir. 2014||n|line break mid-cite (732, / 735)
+41|13|Biosonix, LLC v. Hydrowave, LLC, 230 F. Supp. 3d 598, 607–09 (E.D. Tex. 2017)|full|Biosonix, LLC v. Hydrowave, LLC|230|F. Supp. 3d|598|607–09|E.D. Tex. 2017||n|line break mid-cite (LLC, / 230)
+42|13|Network-1 Techs., Inc. v. Alcatel-Lucent USA, Inc., No. 6:11-CV-492-RWS-KNM, 2017 WL 5180347, at *4 (E.D. Tex. Oct. 18, 2017)|full|Network-1 Techs., Inc. v. Alcatel-Lucent USA, Inc.|2017|WL|5180347|*4|E.D. Tex. Oct. 18, 2017||n|line breaks mid-name (Network-1 / Techs.) and mid-cite (*4 / (E.D. Tex.)
+43|13|PODS, Inc. v. Porta Stor, Inc., 484 F.3d 1359 (Fed. Cir. 2007)|full|PODS, Inc. v. Porta Stor, Inc.|484|F.3d|1359||Fed. Cir. 2007||n|
+44|13|id. at 1366|id|||||1366||43|n|
+45|13|Merck & Co. v. Teva Pharms. USA, Inc., 395 F.3d 1364, 1372 (Fed. Cir. 2005)|full|Merck & Co. v. Teva Pharms. USA, Inc.|395|F.3d|1364|1372|Fed. Cir. 2005||n|line break mid-paren (Fed. Cir. / 2005)
+46|13|669 F.3d at 1365–66|short|Thorner|669|F.3d||1365–66||10|n|case name in running text, separated from cite
+47|15|Phillips, 415 F.3d at 1313|short|Phillips|415|F.3d||1313||1|n|
+48|15|id. at 1317–18|id|||||1317–18||1|n|
+49|15|Wilson Sporting Goods Co. v. Hillerich & Bradsby Co., 442 F.3d 1322, 1330 (Fed. Cir. 2006)|full|Wilson Sporting Goods Co. v. Hillerich & Bradsby Co.|442|F.3d|1322|1330|Fed. Cir. 2006||n|
+50|16|Phillips, 415 F.3d at 1314|short|Phillips|415|F.3d||1314||1|n|
+51|16|Tandon Corp. v. ITC, 831 F.2d 1017, 1023 (Fed. Cir. 1987)|full|Tandon Corp. v. ITC|831|F.2d|1017|1023|Fed. Cir. 1987||n|line break mid-name
+52|16|Curtiss-Wright, 438 F.3d at 1380–81|short|Curtiss-Wright|438|F.3d||1380–81||38|n|
+53|16|Ancora, 744 F.3d at 735|short|Ancora|744|F.3d||735||40|n|split across pages (at / 735)
+54|17|Network-1 Techs., 2017 WL 5180347, at *4|short|Network-1 Techs.|2017|WL|5180347|*4||42|n|WL short form; line break mid-cite (WL / 5180347)
+55|17|Biosonix, 230 F. Supp. 3d at 607–09|short|Biosonix|230|F. Supp. 3d||607–09||41|n|
+56|17|PODS, 484 F.3d at 1366|short|PODS|484|F.3d||1366||43|n|
+57|17|Id.|id|||||||43|n|follows PODS cite with record parenthetical (Def.’s Br.); sentence describes PODS’s holding
+58|17|Katrinecz v. Motorola Mobility LLC, No. 1:12-CV-235-LY, 2014 WL 60328 (W.D. Tex. Jan. 6, 2014)|full|Katrinecz v. Motorola Mobility LLC|2014|WL|60328||W.D. Tex. Jan. 6, 2014||n|line break mid-cite (WL / 60328)
+59|17|id. at *5|id|||||*5||58|n|
+60|18|i4i, 598 F.3d at 843–44|short|i4i|598|F.3d||843–44||33|n|
+61|18|Thorner, 669 F.3d at 1365–66|short|Thorner|669|F.3d||1365–66||10|n|
+62|19|Vitronics, 90 F.3d at 1584–85|short|Vitronics|90|F.3d||1584–85||34|n|
+63|20|Phillips, 415 F.3d at 1314|short|Phillips|415|F.3d||1314||1|n|inside (quoting ...) of record cite (Def.’s Br. at 19–20)
+64|21|Tandon, 831 F.2d at 1023|short|Tandon|831|F.2d||1023||51|n|
+65|21|415 F.3d at 1323|short|Phillips|415|F.3d||1323||1|n|case name in running text, separated from cite
+66|21|id. at 1324–27|id|||||1324–27||1|n|
+67|21|Blackbird Tech LLC v. ELB Elecs., Inc., 895 F.3d 1374, 1377–78 (Fed. Cir. 2018)|full|Blackbird Tech LLC v. ELB Elecs., Inc.|895|F.3d|1374|1377–78|Fed. Cir. 2018||n|hyphenated line break mid-name (Black-bird)
+68|22|Rexnord Corp. v. Laitram Corp., 274 F.3d 1336, 1344 (Fed. Cir. 2001)|full|Rexnord Corp. v. Laitram Corp.|274|F.3d|1336|1344|Fed. Cir. 2001||n|line break mid-cite (1336, / 1344)
+69|22|Grace Instrument Industries, LLC v. Chandler Instruments Co., 57 F.4th 1001, 1010 (Fed. Cir. 2023)|full|Grace Instrument Industries, LLC v. Chandler Instruments Co.|57|F.4th|1001|1010|Fed. Cir. 2023||n|line break mid-name
+70|22|id. at 1008–10|id|||||1008–10||69|n|
+71|22|id. at 1010|id|||||1010||69|n|line break mid-cite (at / 1010)
+72|22|Thorner, 669 F.3d at 1366|short|Thorner|669|F.3d||1366||10|n|
+73|22|Proxense, 2024 WL 2703020, at *1|short|Proxense|2024|WL|2703020|*1||9|n|WL short form
+74|22|3M, 725 F.3d at 1326|short|3M|725|F.3d||1326||20|n|inside (quoting ...) of row 73; line break mid-cite (at / 1326)
+75|24|In re Reiffin Fam. Trust, 340 F. App’x 651, 653 (Fed. Cir. 2009)|full|In re Reiffin Fam. Trust|340|F. App’x|651|653|Fed. Cir. 2009||n|line break mid-name
+76|25|Vitronics, 90 F.3d at 1583|short|Vitronics|90|F.3d||1583||34|n|
+77|28|Vitronics, 90 F.3d at 1584–85|short|Vitronics|90|F.3d||1584–85||34|n|
+78|30|Thorner, 669 F.3d at 1366|short|Thorner|669|F.3d||1366||10|n|
+79|30|GE Lighting, 750 F.3d at 1309|short|GE Lighting|750|F.3d||1309||2|n|
+80|31|Wilson, 442 F.3d at 1330|short|Wilson|442|F.3d||1330||49|n|
+81|32|Sonix, 844 F.3d at 1377|short|Sonix|844|F.3d||1377||25|n|
+82|33|MasterMine Software, Inc. v. Microsoft Corp., 874 F.3d 1307, 1315 (Fed. Cir. 2017)|full|MasterMine Software, Inc. v. Microsoft Corp.|874|F.3d|1307|1315|Fed. Cir. 2017||n|line break mid-cite (Corp., / 874); leading "In" is running text
+83|33|UltimatePointer, L.L.C. v. Nintendo Co., 816 F.3d 816, 826–27 (Fed. Cir. 2016)|full|UltimatePointer, L.L.C. v. Nintendo Co.|816|F.3d|816|826–27|Fed. Cir. 2016||n|leading "In" is running text
+84|33|Microprocessor Enhancement Corp. v. Texas Instruments Inc., 520 F.3d 1367, 1371–72, 1375 (Fed. Cir. 2008)|full|Microprocessor Enhancement Corp. v. Texas Instruments Inc.|520|F.3d|1367|1371–72, 1375|Fed. Cir. 2008||n|line break mid-cite (1367, / 1371–72)
+85|33|ParkerVision, Inc. v. Qualcomm Inc., 903 F.3d 1354, 1358, 1361–62 (Fed. Cir. 2018)|full|ParkerVision, Inc. v. Qualcomm Inc.|903|F.3d|1354|1358, 1361–62|Fed. Cir. 2018||n|line break mid-name
+86|33|IPXL Holdings, L.L.C. v. Amazon.com, Inc., 430 F.3d 1377, 1384 (Fed. Cir. 2005)|full|IPXL Holdings, L.L.C. v. Amazon.com, Inc.|430|F.3d|1377|1384|Fed. Cir. 2005||n|split across pages (IPXL / Holdings)
+87|34|In re Katz Interactive Call Processing Pat. Litig., 639 F.3d 1303, 1318 (Fed. Cir. 2011)|full|In re Katz Interactive Call Processing Pat. Litig.|639|F.3d|1303|1318|Fed. Cir. 2011||n|line break mid-cite (Litig., / 639)
+88|34|H-W Tech., L.C. v. Overstock.com, Inc., 758 F.3d 1329, 1335–36 (Fed. Cir. 2014)|full|H-W Tech., L.C. v. Overstock.com, Inc.|758|F.3d|1329|1335–36|Fed. Cir. 2014||n|line break mid-name
+89|34|Lecat’s Ventriloscope v. MT Tool & Mfg., 351 F. Supp. 3d 1100, 1113 (N.D. Ill. 2018)|full|Lecat’s Ventriloscope v. MT Tool & Mfg.|351|F. Supp. 3d|1100|1113|N.D. Ill. 2018||n|line break mid-paren (N.D. Ill. / 2018)
+90|34|Courtesy Prods., L.L.C. v. Hamilton Beach Brands, Inc., No. 13-2012-SLR, 2015 WL 7295436, at *4–5 (D. Del. Nov. 18, 2015)|full|Courtesy Prods., L.L.C. v. Hamilton Beach Brands, Inc.|2015|WL|7295436|*4–5|D. Del. Nov. 18, 2015||n|line break mid-cite (WL / 7295436)
+91|34|UltimatePointer, 816 F.3d at 827–28|short|UltimatePointer|816|F.3d||827–28||83|n|
+92|34|816 F.3d at 826–27|short|UltimatePointer|816|F.3d||826–27||83|n|case name in running text, separated from cite; line break mid-pincite (826– / 27)
+93|35|874 F.3d at 1315|short|MasterMine|874|F.3d||1315||82|n|case name in running text, separated from cite (name on p. 34)
+94|35|903 F.3d at 1358, 1361–62|short|ParkerVision|903|F.3d||1358, 1361–62||85|n|case name in running text, separated from cite

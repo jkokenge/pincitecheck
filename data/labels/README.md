@@ -82,6 +82,8 @@ Do **not** label:
   record. On page 11 of b04, `Id. ¶ 29` refers to the complaint: skip it.
 - Statutes, regulations, rules, constitutions (`42 U.S.C. § 1981`, `Fed. R. Civ. P. 12`).
 - Record and docket cites (`Compl. ¶ 45`, `ECF No. 12 at 5`, `A-001`).
+- Patent cites (`’316 Pat., 8:33–34`, `U.S. Patent No. 9,876,543`). They are evidence in the
+  record, not court decisions. An `Id.` right after one points to the patent: skip it too.
 - The brief's own caption and case number.
 - Secondary sources (treatises, law reviews, Restatements).
 - A case named in running text with no reporter or pincite (`Even more so than in Hollander, …`,
