@@ -55,3 +55,47 @@ cite_no|pdf_page|raw_text|form|case_name|volume|reporter|page|pincite|paren|refe
 54|24|Id.|id|||||||53|n|
 55|24|ACLI Gov’t Sec., Inc. v. Rhoades, 813 F. Supp. 255, 257 (S.D.N.Y.)|full|ACLI Gov’t Sec., Inc. v. Rhoades|813|F. Supp.|255|257|S.D.N.Y.||n|year omitted from paren (same year as affirmance)
 56|24|Gov’t v. Rhoades, 14 F.3d 591 (2d Cir. 1993)|full|Gov’t v. Rhoades|14|F.3d|591||2d Cir. 1993||n|subsequent history (aff'd sub nom.) of row 55; line break mid-phrase (sub / nom.)
+57|25|Banco Espiritu Santo de Investimento, S.A. v. Citibank, N.A., 2003 WL 23018888, at *15 (S.D.N.Y. Dec. 22, 2003)|full|Banco Espiritu Santo de Investimento, S.A. v. Citibank, N.A.|2003|WL|23018888|*15|S.D.N.Y. Dec. 22, 2003||n|line break mid-name
+58|25|110 Fed. App’x 191 (2d Cir. 2004)|full||110|Fed. App’x|191||2d Cir. 2004||n|subsequent history (aff'd) of row 57; nonstandard reporter abbrev (Fed. App’x for F. App’x); no comma after aff’d
+59|25|Grand Pac. Fin. Corp. v. 97-111 Hale, LLC, 123 A.D.3d 764, 767 (2d Dep’t 2014)|full|Grand Pac. Fin. Corp. v. 97-111 Hale, LLC|123|A.D.3d|764|767|2d Dep’t 2014||n|line break mid-name; number in case name
+60|25|EBC I, Inc. v. Goldman, Sachs & Co., 5 N.Y.3d 11, 19–20 (2005)|full|EBC I, Inc. v. Goldman, Sachs & Co.|5|N.Y.3d|11|19–20|2005||n|inside (quoting ...) of row 59; line break mid-cite (5 / N.Y.3d)
+61|25|Next/Ingle, 2026 WL 1398474, at *9|short|Next/Ingle|2026|WL|1398474|*9||51|y|footnote 6; WL short form
+62|26|Zeising v. Kelly, 152 F. Supp. 2d 335, 348 (S.D.N.Y. 2001)|full|Zeising v. Kelly|152|F. Supp. 2d|335|348|S.D.N.Y. 2001||n|
+63|26|Steinbeck v. Gerosa, 4 N.Y.2d 302, 317 (1958)|full|Steinbeck v. Gerosa|4|N.Y.2d|302|317|1958||n|
+64|26|Id.|id|||||||63|n|
+65|26|Slabakis v. Schik, 164 A.D.3d 454, 455 (1st Dep’t 2018)|full|Slabakis v. Schik|164|A.D.3d|454|455|1st Dep’t 2018||n|line break mid-cite (164 / A.D.3d)
+66|27|Growblox Scis., Inc. v. GCM Admin. Servs., LLC, 2015 WL 3504208, at *8 (S.D.N.Y. June 2, 2015)|full|Growblox Scis., Inc. v. GCM Admin. Servs., LLC|2015|WL|3504208|*8|S.D.N.Y. June 2, 2015||n|line break mid-name
+67|27|Slabakis, 164 A.D.3d at 455|short|Slabakis|164|A.D.3d||455||65|n|line break mid-cite (at / 455)
+68|27|Scott v. Rosenthal, 2000 WL 1863542, at *3 (S.D.N.Y. Dec. 20, 2000)|full|Scott v. Rosenthal|2000|WL|1863542|*3|S.D.N.Y. Dec. 20, 2000||n|line break mid-name
+69|27|Lebedev v. Blavatnik, 193 A.D.3d 175, 186 (1st Dep’t 2021)|full|Lebedev v. Blavatnik|193|A.D.3d|175|186|1st Dep’t 2021||n|line break mid-cite (193 / A.D.3d)
+70|27|Steinbeck, 4 N.Y.2d at 317|short|Steinbeck|4|N.Y.2d||317||63|n|inside (quoting ...) of row 69
+71|27|Kidz Cloz, 320 F. Supp. 2d at 171|short|Kidz Cloz|320|F. Supp. 2d||171||53|n|
+72|28|Kidz Cloz, Inc., 320 F. Supp. 2d at 173|short|Kidz Cloz, Inc.|320|F. Supp. 2d||173||53|n|line break mid-cite (320 / F. Supp. 2d); short name differs from row 71 (adds ", Inc.")
+73|28|Slabakis, 164 A.D.3d at 455|short|Slabakis|164|A.D.3d||455||65|n|line break mid-cite (164 / A.D.3d)
+74|29|Vigilant Ins. Co. of Am. v. Hous. Auth. of City of El Paso, Tex., 87 N.Y.2d 36, 44 (1995)|full|Vigilant Ins. Co. of Am. v. Hous. Auth. of City of El Paso, Tex.|87|N.Y.2d|36|44|1995||n|line break mid-name; state abbrev inside case name
+75|29|Indep. Disc. Corp. v. Bressner, 47 A.D.2d 756, 757 (2d Dep’t 1975)|full|Indep. Disc. Corp. v. Bressner|47|A.D.2d|756|757|2d Dep’t 1975||n|
+76|29|Priolo Commc’ns, Inc. v. MCI Telecommunications Corp., 248 A.D.2d 453, 454 (2d Dep’t 1998)|full|Priolo Commc’ns, Inc. v. MCI Telecommunications Corp.|248|A.D.2d|453|454|2d Dep’t 1998||n|line break mid-name
+77|29|Peters Griffin Woodward, Inc. v. WCSC, Inc., 88 A.D.2d 883, 884 (1st Dep’t 1982)|full|Peters Griffin Woodward, Inc. v. WCSC, Inc.|88|A.D.2d|883|884|1st Dep’t 1982||n|line break mid-name
+78|29|Elma RT v. Landesmann Int’l Mktg. Corp., 2000 WL 297197, at *3 (S.D.N.Y. Mar. 22, 2000)|full|Elma RT v. Landesmann Int’l Mktg. Corp.|2000|WL|297197|*3|S.D.N.Y. Mar. 22, 2000||n|line break mid-name
+79|29|Daub v. Future Tech Enter., Inc., 65 A.D.3d 1004, 1006 (2d Dep’t 2009)|full|Daub v. Future Tech Enter., Inc.|65|A.D.3d|1004|1006|2d Dep’t 2009||n|line break mid-paren (2d Dep’t / 2009)
+80|29|Barnet v. Drawbridge Special Opportunities Fund LP, 2014 WL 4393320, at *21 (S.D.N.Y. Sept. 5, 2014)|full|Barnet v. Drawbridge Special Opportunities Fund LP|2014|WL|4393320|*21|S.D.N.Y. Sept. 5, 2014||n|split across pages; ECF header and page number fall between pincite and paren
+81|30|Elma, 2000 WL 297197, at *4|short|Elma|2000|WL|297197|*4||78|n|WL short form
+82|30|id.|id|||||||78|n|lowercase id. after signal (See, e.g.,)
+83|30|Nasso v. Bio Reference Lab’ys, Inc., 892 F. Supp. 2d 439, 454 (E.D.N.Y. 2012)|full|Nasso v. Bio Reference Lab’ys, Inc.|892|F. Supp. 2d|439|454|E.D.N.Y. 2012||n|line break mid-reporter (F. / Supp. 2d); judge parenthetical (Bianco, J.) after cite
+84|30|Priolo, 248 A.D.2d at 454|short|Priolo|248|A.D.2d||454||76|n|
+85|30|Daub, 65 A.D.3d at 1006|short|Daub|65|A.D.3d||1006||79|n|
+86|31|Feist Publications, Inc. v. Rural Tel. Serv. Co., 499 U.S. 340, 361 (1991)|full|Feist Publications, Inc. v. Rural Tel. Serv. Co.|499|U.S.|340|361|1991||n|line break mid-name
+87|31|16 Casa Duse, LLC v. Merkin, 791 F.3d 247, 258 (2d Cir. 2015)|full|16 Casa Duse, LLC v. Merkin|791|F.3d|247|258|2d Cir. 2015||n|case name starts with a number; line break mid-name (16 Casa / Duse)
+88|31|Id. at 259|id|||||259||87|n|skips (quoting 17 U.S.C. § 102(a)) of row 87
+89|31|John Wiley & Sons, Inc. v. DRK Photo, 882 F.3d 394, 414 (2d Cir. 2018)|full|John Wiley & Sons, Inc. v. DRK Photo|882|F.3d|394|414|2d Cir. 2018||y|footnote 7; line break mid-cite (882 F.3d / 394)
+90|32|791 F.3d at 255|short||791|F.3d||255||87|n|no case name in cite; name in running text earlier in paragraph (16 Casa Duse)
+91|32|Id. at 258|id|||||258||87|n|
+92|32|Id.|id|||||||87|n|
+93|32|Garcia v. Google, Inc., 786 F.3d 733, 742 (9th Cir. 2015)|full|Garcia v. Google, Inc.|786|F.3d|733|742|9th Cir. 2015||n|inside (quoting ...) of row 92
+94|32|Blizzard Entertainment, Inc. v. Lilith Games (Shanghai) Co., 2017 WL 2118342 (N.D. Cal. May 16, 2017)|full|Blizzard Entertainment, Inc. v. Lilith Games (Shanghai) Co.|2017|WL|2118342||N.D. Cal. May 16, 2017||n|cite used as sentence subject; no pincite; parenthetical (Shanghai) inside case name; line break mid-paren (N.D. Cal. / May)
+95|32|Id. at *8|id|||||*8||94|n|
+96|32|Id. at *10–11|id|||||*10–11||94|n|
+97|33|Lucente v. IBM Corp., 310 F.3d 243, 258 (2d Cir. 2002)|full|Lucente v. IBM Corp.|310|F.3d|243|258|2d Cir. 2002||n|line break mid-name
+98|33|Id.|id|||||||97|n|
+99|33|Cuoco v. Moritsugu, 222 F.3d 99, 112 (2d Cir. 2000)|full|Cuoco v. Moritsugu|222|F.3d|99|112|2d Cir. 2000||n|line break mid-paren (112 / (2d Cir.)
+100|33|16 Casa Duse, 791 F.3d at 255|short|16 Casa Duse|791|F.3d||255||87|y|footnote 8; short name starts with a number

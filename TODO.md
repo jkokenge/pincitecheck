@@ -43,7 +43,7 @@ public RECAP briefs: precision/recall, plus the citation forms it misses.
 - [ ] Hand-label ground-truth citations for briefs 6–10  ← CURRENT
 - [ ] Blind re-label of b04 (≥ 1 week after first pass) into `data/labels/relabel/b04.psv`
 - [ ] pydantic models: `Citation` (raw text, volume, reporter, page, pincite, span, proposition)
-- [ ] PDF text extraction (pdfplumber) + tests
+- [ ] PDF text extraction (pdfplumber) + tests — strip the CM/ECF header and page-number lines from each page before joining pages (they land mid-citation; b07 #46, #80)
 - [ ] DOCX text extraction (python-docx) + tests (convert one manifest brief to DOCX; RECAP is PDF-only)
 - [ ] eyecite extraction of full case citations
 - [ ] Short-form resolution (Id., supra, short cites)
