@@ -73,6 +73,10 @@ Label:
   own `full` row: it's a different decision by a different court. `raw_text` starts at the
   volume (the history phrase is left out), `case_name` is blank because none is printed, and
   `notes` says `subsequent history (aff'd) of row N`.
+  Exception: `aff'd sub nom.` prints the new case name, so `raw_text` starts at that name and
+  `case_name` is filled; `notes` says `subsequent history (aff'd sub nom.) of row N` (b07 #56).
+  When the main cite's year matches the history's year, the main paren drops the year
+  (`(S.D.N.Y.), aff'd …`): `paren` holds just the court.
 - Citations inside quotations and parentheticals (`(quoting Iqbal, 556 U.S. at 678)`).
 - Every citation in a string cite, one row each.
 
@@ -84,6 +88,8 @@ Do **not** label:
 - Record and docket cites (`Compl. ¶ 45`, `ECF No. 12 at 5`, `A-001`).
 - Patent cites (`’316 Pat., 8:33–34`, `U.S. Patent No. 9,876,543`). They are evidence in the
   record, not court decisions. An `Id.` right after one points to the patent: skip it too.
+- Copyright and trademark registration cites (`Reg. TXu 2-541-660`, `Reg. No. 5,123,456`).
+  Same reason as patents: they're record evidence, not court decisions.
 - The brief's own caption and case number.
 - Secondary sources (treatises, law reviews, Restatements).
 - A case named in running text with no reporter or pincite (`Even more so than in Hollander, …`,
@@ -110,6 +116,11 @@ treats a link to any full cite of the same case as correct, since they're the sa
 not one nested in its `(quoting …)` / `(citing …)`. In b03, `Consumers’ Rsch., 606 U.S. at
 673 (quoting Whitman, 531 U.S. at 475). Id.` → the `Id.` is *Consumers’ Rsch.* `refers_to`
 is the first full cite of that case; `notes` names the skipped citation.
+
+Subsequent history is part of the main citation it follows, so an `Id.` right after it
+(`Tasini …, aff'd, 505 F. App'x 45. … Id.`) points to the main cite. Note
+`after subsequent history; scorer also accepts aff'd (row M)` — eyecite may link the `Id.` to
+the affirmance, a defensible reading that shouldn't count as an extraction error (b07 #44).
 
 The exception is an `Id.` after a record cite that cites a case: `See Mot. at 12:15–25 (citing
 Puri v. Costco …). There, the court found … Id.` The main citation is the motion, but the

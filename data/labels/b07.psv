@@ -1,1 +1,57 @@
 cite_no|pdf_page|raw_text|form|case_name|volume|reporter|page|pincite|paren|refers_to|in_footnote|notes
+1|14|Grupo Mexicano de Desarrollo, S.A. v. Alliance Bond Fund, Inc., 527 U.S. 308, 310 (1999)|full|Grupo Mexicano de Desarrollo, S.A. v. Alliance Bond Fund, Inc.|527|U.S.|308|310|1999||n|line break mid-name
+2|14|Ashcroft v. Iqbal, 556 U.S. 662, 678 (2009)|full|Ashcroft v. Iqbal|556|U.S.|662|678|2009||n|line break mid-cite (556 U.S. / 662)
+3|14|Bell Atl. Corp. v. Twombly, 550 U.S. 544, 570 (2007)|full|Bell Atl. Corp. v. Twombly|550|U.S.|544|570|2007||n|inside (quoting ...) of row 2
+4|14|Reis, Inc. v. Lennar Corp., 2016 WL 3702736, at *3 (S.D.N.Y. July 5, 2016)|full|Reis, Inc. v. Lennar Corp.|2016|WL|3702736|*3|S.D.N.Y. July 5, 2016||n|line break mid-cite (2016 / WL)
+5|14|Iqbal, 556 U.S. at 678|short|Iqbal|556|U.S.||678||2|n|inside (quoting ...) of row 4
+6|15|Iqbal, 556 U.S. at 678|short|Iqbal|556|U.S.||678||2|n|
+7|15|Reis, 2016 WL 3702736, at *3|short|Reis|2016|WL|3702736|*3||4|n|WL short form; line break mid-cite (2016 WL / 3702736)
+8|15|Nuevo Mundo Holdings v. Pricewaterhouse Coopers LLP, 2004 WL 112948, at *2 (S.D.N.Y. Jan. 22, 2004)|full|Nuevo Mundo Holdings v. Pricewaterhouse Coopers LLP|2004|WL|112948|*2|S.D.N.Y. Jan. 22, 2004||n|line break mid-name
+9|15|Harsco Corp. v. Segui, 91 F.3d 337, 348 (2d Cir. 1996)|full|Harsco Corp. v. Segui|91|F.3d|337|348|2d Cir. 1996||n|
+10|15|Wolff v. Rare Medium, Inc., 210 F. Supp. 2d 490, 494 (S.D.N.Y. 2002)|full|Wolff v. Rare Medium, Inc.|210|F. Supp. 2d|490|494|S.D.N.Y. 2002||n|line break mid-cite (494 / (S.D.N.Y.)
+11|15|65 F. App’x 736 (2d Cir. 2003)|full||65|F. App’x|736||2d Cir. 2003||n|subsequent history (aff'd) of row 10
+12|15|Orange Cnty. Choppers, Inc. v. Olaes Enters., Inc., 497 F. Supp. 2d 541, 554 (S.D.N.Y. 2007)|full|Orange Cnty. Choppers, Inc. v. Olaes Enters., Inc.|497|F. Supp. 2d|541|554|S.D.N.Y. 2007||n|string cite; line break mid-name
+13|16|Canzona v. Atanasio, 118 A.D.3d 837, 839 (2d Dep’t 2014)|full|Canzona v. Atanasio|118|A.D.3d|837|839|2d Dep’t 2014||n|line break between name and cite
+14|16|Joseph Martin, Jr., Delicatessen, Inc. v. Schumacher, 52 N.Y.2d 105, 109 (1981)|full|Joseph Martin, Jr., Delicatessen, Inc. v. Schumacher|52|N.Y.2d|105|109|1981||n|line break mid-name; commas inside case name
+15|16|Compania Embotelladora Del Pacifico, S.A. v. Pepsi Cola Co., 976 F.3d 239, 245 (2d Cir. 2020)|full|Compania Embotelladora Del Pacifico, S.A. v. Pepsi Cola Co.|976|F.3d|239|245|2d Cir. 2020||n|line break mid-name
+16|16|Compania, 976 F.3d at 245|short|Compania|976|F.3d||245||15|n|line break mid-cite (976 F.3d / at 245)
+17|17|Spinelli v. Nat’l Football League, 96 F. Supp. 3d 81, 131 (S.D.N.Y. 2015)|full|Spinelli v. Nat’l Football League|96|F. Supp. 3d|81|131|S.D.N.Y. 2015||n|
+18|18|Khurana v. Wahed Inv., LLC, 2019 WL 1430433, at *9 (S.D.N.Y. Feb. 26, 2019)|full|Khurana v. Wahed Inv., LLC|2019|WL|1430433|*9|S.D.N.Y. Feb. 26, 2019||n|line break mid-pincite (at / *9)
+19|18|Id.|id|||||||18|n|
+20|18|Athayde v. Dogpound Fitness, Inc., 2024 WL 3876181, at *3 (S.D.N.Y. Aug. 20, 2024)|full|Athayde v. Dogpound Fitness, Inc.|2024|WL|3876181|*3|S.D.N.Y. Aug. 20, 2024||n|line break mid-cite (2024 WL / 3876181)
+21|18|D&L Holdings v. Goldman Co., 287 A.D.2d 65, 73 (1st Dep’t 2001)|full|D&L Holdings v. Goldman Co.|287|A.D.2d|65|73|1st Dep’t 2001||n|ampersand in case name
+22|18|Broder v. Cablevision Sys. Corp., 418 F.3d 187, 198–99 (2d Cir. 2005)|full|Broder v. Cablevision Sys. Corp.|418|F.3d|187|198–99|2d Cir. 2005||n|line break mid-name
+23|18|M/A-COM Sec. Corp. v. Galesi, 904 F.2d 134, 136 (2d Cir. 1990)|full|M/A-COM Sec. Corp. v. Galesi|904|F.2d|134|136|2d Cir. 1990||n|slash and hyphen in case name
+24|19|Rowe v. Great Atl. & Pac. Tea Co., 46 N.Y.2d 62, 69 (1978)|full|Rowe v. Great Atl. & Pac. Tea Co.|46|N.Y.2d|62|69|1978||n|ampersand in case name
+25|19|M/A-COM, 904 F.2d at 136|short|M/A-COM|904|F.2d||136||23|n|
+26|19|D&L Holdings, 287 A.D.2d at 73|short|D&L Holdings|287|A.D.2d||73||21|n|
+27|19|Murphy v. Am. Home Prods. Corp., 58 N.Y.2d 293, 304 (1983)|full|Murphy v. Am. Home Prods. Corp.|58|N.Y.2d|293|304|1983||n|line break before year (304 / (1983))
+28|19|Compania, 976 F.3d at 245|short|Compania|976|F.3d||245||15|n|
+29|19|Id. at 248|id|||||248||15|n|
+30|19|Engelhard Corp. v. Research Corp., 268 A.D.2d 358, 358–59 (2d Dep’t 2000)|full|Engelhard Corp. v. Research Corp.|268|A.D.2d|358|358–59|2d Dep’t 2000||n|pincite starts on first page
+31|20|Tobias v. Notations, Inc., 2015 WL 4654454, at *3 (S.D.N.Y. July 20, 2015)|full|Tobias v. Notations, Inc.|2015|WL|4654454|*3|S.D.N.Y. July 20, 2015||n|
+32|20|Atlantis Info. Tech., GmbH v. CA, Inc., 485 F. Supp. 2d 224, 230–31 (E.D.N.Y. 2007)|full|Atlantis Info. Tech., GmbH v. CA, Inc.|485|F. Supp. 2d|224|230–31|E.D.N.Y. 2007||n|line break mid-reporter (F. / Supp. 2d)
+33|20|Admiral Ins. Co. v. Niagara Transformer Corp., 57 F.4th 85, 99 (2d Cir. 2023)|full|Admiral Ins. Co. v. Niagara Transformer Corp.|57|F.4th|85|99|2d Cir. 2023||n|
+34|20|EFG Bank AG, Cayman Branch v. AXA Equitable Life Ins. Co., 309 F. Supp. 3d 89, 99 (S.D.N.Y. 2018)|full|EFG Bank AG, Cayman Branch v. AXA Equitable Life Ins. Co.|309|F. Supp. 3d|89|99|S.D.N.Y. 2018||n|line break mid-cite (309 / F. Supp. 3d)
+35|20|Miller v. Wells Fargo Bank, N.A., 994 F. Supp. 2d 542, 558 (S.D.N.Y. 2014)|full|Miller v. Wells Fargo Bank, N.A.|994|F. Supp. 2d|542|558|S.D.N.Y. 2014||y|footnote 4; line break mid-name
+36|20|Chiste v. Hotels.com L.P., 756 F. Supp. 2d 382, 406 (S.D.N.Y. 2010)|full|Chiste v. Hotels.com L.P.|756|F. Supp. 2d|382|406|S.D.N.Y. 2010||y|footnote 4; line break before court/year
+37|21|SoFi Classic S.A. de C.V. v. Hurowitz, 444 F. Supp. 2d 231, 249–50 (S.D.N.Y. 2006)|full|SoFi Classic S.A. de C.V. v. Hurowitz|444|F. Supp. 2d|231|249–50|S.D.N.Y. 2006||n|line break before court/year
+38|21|Georgia Malone & Co. v. Rieder, 19 N.Y.3d 511, 516 (2012)|full|Georgia Malone & Co. v. Rieder|19|N.Y.3d|511|516|2012||n|ampersand in case name
+39|21|MG W. 100 LLC v. St. Michael’s Protestant Episcopal Church, 127 A.D.3d 624, 626 (1st Dep’t 2015)|full|MG W. 100 LLC v. St. Michael’s Protestant Episcopal Church|127|A.D.3d|624|626|1st Dep’t 2015||n|line break mid-paren (1st Dep’t / 2015); number in case name
+40|21|Clark Fitzpatrick, Inc. v. LIRR, 70 N.Y.2d 382, 388 (1987)|full|Clark Fitzpatrick, Inc. v. LIRR|70|N.Y.2d|382|388|1987||n|inside (citing ...) of row 39
+41|21|Corsello v. Verizon N.Y., Inc., 18 N.Y.3d 777, 790 (2012)|full|Corsello v. Verizon N.Y., Inc.|18|N.Y.3d|777|790|2012||n|
+42|22|Tasini v. AOL, Inc., 851 F. Supp. 2d 734, 740–41 (S.D.N.Y. 2012)|full|Tasini v. AOL, Inc.|851|F. Supp. 2d|734|740–41|S.D.N.Y. 2012||n|line break mid-pincite (740– / 41)
+43|22|505 F. App’x 45 (2d Cir. 2012)|full||505|F. App’x|45||2d Cir. 2012||n|subsequent history (aff'd) of row 42
+44|22|Id.|id|||||||42|n|after subsequent history; scorer also accepts aff'd (row 43)
+45|22|In re Akanmu, 502 B.R. 124, 138 (Bankr. E.D.N.Y. 2013)|full|In re Akanmu|502|B.R.|124|138|Bankr. E.D.N.Y. 2013||n|
+46|22|Nat’l Basketball Ass’n v. Motorola, Inc., 105 F.3d 841, 848 (2d Cir. 1997)|full|Nat’l Basketball Ass’n v. Motorola, Inc.|105|F.3d|841|848|2d Cir. 1997||n|split across pages; ECF header and page number fall inside the paren (2d Cir. / 1997)
+47|23|Piuggi v. Good for You Prods. LLC, 739 F. Supp. 3d 143, 170 (S.D.N.Y. 2024)|full|Piuggi v. Good for You Prods. LLC|739|F. Supp. 3d|143|170|S.D.N.Y. 2024||n|line break mid-paren (S.D.N.Y. / 2024)
+48|23|Atari Games Corp. v. Oman, 888 F.2d 878, 882 (D.C. Cir. 1989)|full|Atari Games Corp. v. Oman|888|F.2d|878|882|D.C. Cir. 1989||n|
+49|23|Stern Elecs., Inc. v. Kaufman, 669 F.2d 852, 857 (2d Cir. 1982)|full|Stern Elecs., Inc. v. Kaufman|669|F.2d|852|857|2d Cir. 1982||n|line break mid-paren (2d Cir. / 1982)
+50|23|Hines v. Chappell Music Corp., 2022 WL 3646206, at *2–3 (S.D.N.Y. Aug. 23, 2022)|full|Hines v. Chappell Music Corp.|2022|WL|3646206|*2–3|S.D.N.Y. Aug. 23, 2022||n|line break before court/date
+51|24|Next/Ingle Holdings, LLC v. GSPP HOLDCO III, LLC, 2026 WL 1398474, at *9 (S.D.N.Y. May 19, 2026)|full|Next/Ingle Holdings, LLC v. GSPP HOLDCO III, LLC|2026|WL|1398474|*9|S.D.N.Y. May 19, 2026||n|line break mid-name; slash in case name
+52|24|Yukos Cap. S.A.R.L. v. Feldman, 977 F.3d 216, 241 (2d Cir. 2020)|full|Yukos Cap. S.A.R.L. v. Feldman|977|F.3d|216|241|2d Cir. 2020||n|inside (quoting ...) of row 51
+53|24|Kidz Cloz, Inc. v. Officially For Kids, Inc., 320 F. Supp. 2d 164, 171 (S.D.N.Y. 2004)|full|Kidz Cloz, Inc. v. Officially For Kids, Inc.|320|F. Supp. 2d|164|171|S.D.N.Y. 2004||n|line break mid-name
+54|24|Id.|id|||||||53|n|
+55|24|ACLI Gov’t Sec., Inc. v. Rhoades, 813 F. Supp. 255, 257 (S.D.N.Y.)|full|ACLI Gov’t Sec., Inc. v. Rhoades|813|F. Supp.|255|257|S.D.N.Y.||n|year omitted from paren (same year as affirmance)
+56|24|Gov’t v. Rhoades, 14 F.3d 591 (2d Cir. 1993)|full|Gov’t v. Rhoades|14|F.3d|591||2d Cir. 1993||n|subsequent history (aff'd sub nom.) of row 55; line break mid-phrase (sub / nom.)
