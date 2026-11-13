@@ -74,7 +74,7 @@ Label:
   volume (the history phrase is left out), `case_name` is blank because none is printed, and
   `notes` says `subsequent history (aff'd) of row N`.
   Exception: `aff'd sub nom.` prints the new case name, so `raw_text` starts at that name and
-  `case_name` is filled; `notes` says `subsequent history (aff'd sub nom.) of row N` (b07 #56).
+  `case_name` is filled; `notes` says `subsequent history (aff'd sub nom.) of row N` (b07 #57).
   When the main cite's year matches the history's year, the main paren drops the year
   (`(S.D.N.Y.), aff'd …`): `paren` holds just the court.
 - Citations inside quotations and parentheticals (`(quoting Iqbal, 556 U.S. at 678)`).
@@ -120,7 +120,7 @@ is the first full cite of that case; `notes` names the skipped citation.
 Subsequent history is part of the main citation it follows, so an `Id.` right after it
 (`Tasini …, aff'd, 505 F. App'x 45. … Id.`) points to the main cite. Note
 `after subsequent history; scorer also accepts aff'd (row M)` — eyecite may link the `Id.` to
-the affirmance, a defensible reading that shouldn't count as an extraction error (b07 #44).
+the affirmance, a defensible reading that shouldn't count as an extraction error (b07 #45).
 
 The exception is an `Id.` after a record cite that cites a case: `See Mot. at 12:15–25 (citing
 Puri v. Costco …). There, the court found … Id.` The main citation is the motion, but the
